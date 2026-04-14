@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>LCN Consulting — Dimensional Intelligence for Pharma Leaders</title>
+  <link rel="preconnect" href="https://api.fontshare.com"/>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=zodiak@400,700&display=swap" rel="stylesheet"/>
+  <style>
+    :root{
+      --navy:#0c2340;--navy-2:#17395d;--navy-soft:#dce8f3;--navy-faint:#eef4f9;
+      --red:#d71920;--white:#fff;--off:#f7f9fc;--border:rgba(12,35,64,.09);
+      --muted:#4d6480;--faint:#8a9bb0;
+      --r-pill:9999px;--r-xl:1.25rem;--r-lg:1rem;--r-md:.75rem;
+      --shadow:0 2px 8px rgba(12,35,64,.07);--shadow-lg:0 12px 40px rgba(12,35,64,.14);
+      --ease:.18s cubic-bezier(.16,1,.3,1);
+      --max:1180px;
+      --fds:'Zodiak',Georgia,serif;--fdb:'General Sans',system-ui,sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--fdb);background:#fff;color:var(--navy);line-height:1.65;-webkit-font-smoothing:antialiased}
+    img{display:block;max-width:100%;height:auto}
+    a{text-decoration:none;color:inherit}
+    button{font:inherit;cursor:pointer;background:none;border:none;color:inherit}
+    .wrap{width:min(calc(100% - 2.5rem),var(--max));margin-inline:auto}
+
+    /* ─── HEADER ─── */
+    .hdr{position:sticky;top:0;z-index:900;background:rgba(255,255,255,.96);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+    .hdr-inner{display:flex;align-items:center;justify-content:space-between;height:76px;gap:1.5rem}
+    .logo img{height:52px;width:auto;display:block}
+
+    /* nav row */
+    .nav{display:flex;align-items:center;gap:.2rem}
+    .nl{display:inline-flex;align-items:center;gap:.3rem;padding:.55rem .9rem;border-radius:var(--r-pill);font-size:.82rem;font-weight:600;color:var(--muted);border:1.5px solid transparent;white-space:nowrap;transition:all var(--ease);cursor:pointer;background:none}
+    .nl:hover,.nl.active{background:var(--off);border-color:var(--border);color:var(--navy)}
+
+    /* dropdown */
+    .dd{position:relative;display:inline-flex;align-items:center}
+    .dd-menu{position:absolute;top:calc(100% + 4px);left:50%;transform:translateX(-50%);min-width:220px;padding:.4rem;background:#fff;border:1px solid var(--border);border-radius:var(--r-xl);box-shadow:var(--shadow-lg);z-index:9999;visibility:hidden;opacity:0;pointer-events:none;display:flex;flex-direction:column;gap:.1rem;transition:opacity .15s,visibility .15s}
+    .dd-menu::before{content:'';position:absolute;top:-10px;left:0;right:0;height:10px}
+    .dd:hover .dd-menu,.dd:focus-within .dd-menu{visibility:visible;opacity:1;pointer-events:auto}
+    .dd-item{display:block;padding:.7rem 1rem;border-radius:.65rem;font-size:.82rem;font-weight:500;color:var(--muted);white-space:nowrap;transition:background .12s,color .12s}
+    .dd-item:hover,.dd-item.active{background:var(--navy-faint);color:var(--navy)}
+
+    /* ─── PAGES ─── */
+    .pg{display:none;padding:3rem 0 5rem}.pg.on{display:block}
+
+    /* ─── TYPE ─── */
+    .label{display:inline-flex;padding:.42rem .85rem;border-radius:var(--r-pill);font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;background:var(--navy-soft);color:var(--navy);margin-bottom:1.1rem}
+    .label-red{background:#fdecea;color:var(--red)}
+    h1{font-family:var(--fds);font-size:clamp(2.2rem,5vw,3.5rem);line-height:1.02;letter-spacing:-.03em;color:var(--navy)}
+    h2{font-family:var(--fds);font-size:clamp(1.6rem,3vw,2.4rem);line-height:1.08;color:var(--navy)}
+    h3{font-size:1.15rem;font-weight:700;line-height:1.25;color:var(--navy)}
+    .lead{font-size:1.05rem;color:var(--muted);max-width:62ch;line-height:1.7;margin-top:.9rem}
+    p{color:var(--muted);max-width:66ch;line-height:1.65}
+    .kicker{font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--red);margin-bottom:.65rem}
+
+    /* ─── LAYOUT ─── */
+    .g2{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem}
+    .g3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+    .g4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3.5rem;align-items:center;padding-top:1rem}
+    .sh{max-width:52rem;margin-bottom:2.5rem}
+    .sh h2{margin-top:.5rem}
+    .sh p{margin-top:.75rem}
+    .shell{display:grid;gap:3rem}
+
+    /* ─── CARDS ─── */
+    .card{padding:2rem;border-radius:var(--r-xl);background:var(--off);border:1px solid var(--border);transition:box-shadow var(--ease),transform var(--ease)}
+    .card:hover{box-shadow:var(--shadow-lg);transform:translateY(-2px)}
+    .card-dark{background:var(--navy);border-color:transparent}
+    .card-dark h3,.card-dark p,.card-dark .kicker{color:rgba(255,255,255,.85)}
+    .card-dark h3{color:#fff}
+    .card-dark .kicker{color:#f87171}
+    .panel{padding:2rem;border-radius:var(--r-xl);background:var(--off);border:1px solid var(--border)}
+    .stat{padding:1.75rem;border-radius:var(--r-xl);background:var(--off);border:1px solid var(--border);text-align:center}
+    .stat strong{display:block;font-family:var(--fds);font-size:2.4rem;line-height:1;color:var(--navy);margin-bottom:.4rem}
+    .stat span{font-size:.85rem;color:var(--muted)}
+    .band{padding:3rem;border-radius:var(--r-xl);background:linear-gradient(135deg,var(--navy) 0%,#1a4a72 100%)}
+    .band *{color:#fff}.band p{color:rgba(255,255,255,.75);max-width:58ch}
+
+    /* ─── DIVIDER ─── */
+    .divider{height:1px;background:var(--border);margin:2rem 0}
+
+    /* ─── BUTTONS ─── */
+    .btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+    .btn{display:inline-flex;align-items:center;gap:.4rem;padding:.75rem 1.4rem;border-radius:var(--r-pill);font-size:.875rem;font-weight:600;transition:all var(--ease);cursor:pointer}
+    .btn-navy{background:var(--navy);color:#fff}.btn-navy:hover{background:var(--navy-2)}
+    .btn-outline{background:transparent;color:var(--navy);border:1.5px solid var(--navy)}.btn-outline:hover{background:var(--navy);color:#fff}
+    .btn-white{background:#fff;color:var(--navy)}.btn-white:hover{background:var(--off)}
+    .btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.25)}.btn-ghost:hover{background:rgba(255,255,255,.2)}
+
+    /* ─── IMAGES ─── */
+    .img-hero{width:100%;height:300px;object-fit:cover;border-radius:var(--r-xl);box-shadow:var(--shadow-lg)}
+    .img-full{width:100%;height:360px;object-fit:cover;border-radius:var(--r-xl)}
+    .img-card{width:100%;height:185px;object-fit:cover;border-radius:var(--r-lg);margin-bottom:1.1rem}
+    .img-section{width:100%;height:280px;object-fit:cover;border-radius:var(--r-xl);margin:2rem 0}
+
+    /* ─── LIST ─── */
+    .list{display:grid;gap:.9rem}
+    .list li{list-style:none;padding-top:.9rem;border-top:1px solid var(--border);display:flex;gap:.6rem}
+    .list li::before{content:"→";color:var(--red);flex-shrink:0;font-weight:700}
+
+    /* ─── QUOTE BLOCK ─── */
+    .blockquote{border-left:3px solid var(--red);padding:1.25rem 1.75rem;background:var(--navy-faint);border-radius:0 var(--r-lg) var(--r-lg) 0}
+    .blockquote p{font-family:var(--fds);font-size:1.35rem;line-height:1.3;color:var(--navy);max-width:none}
+
+    /* ─── BADGE ROW ─── */
+    .badges{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1rem}
+    .badge{padding:.35rem .85rem;border-radius:var(--r-pill);font-size:.75rem;font-weight:600;background:var(--navy-soft);color:var(--navy)}
+
+    /* ─── FOOTER ─── */
+    .ftr{background:var(--navy);color:#fff;padding:4rem 0 2rem;margin-top:5rem}
+    .ftr-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.1)}
+    .ftr-brand img{height:46px;margin-bottom:1rem}
+    .ftr-brand p{font-size:.85rem;color:rgba(255,255,255,.6);max-width:26ch;line-height:1.6}
+    .ftr-col h5{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:1.1rem}
+    .ftr-col a,.ftr-col p{display:block;font-size:.85rem;color:rgba(255,255,255,.65);margin-bottom:.5rem;transition:color var(--ease)}
+    .ftr-col a:hover{color:#fff}
+    .ftr-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;padding-top:2rem}
+    .ftr-bottom p{font-size:.78rem;color:rgba(255,255,255,.38)}
+
+    /* ─── RESPONSIVE ─── */
+    @media(max-width:960px){
+      .nav{gap:.05rem}.nl{padding:.5rem .65rem;font-size:.78rem}
+    }
+    @media(max-width:720px){
+      .hero-grid,.g2,.g3,.g4,.ftr-grid{grid-template-columns:1fr}
+      .logo img{height:42px}
+      .hdr-inner{height:64px}
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<header class="hdr">
+  <div class="wrap hdr-inner">
+    <a class="logo" href="#home" aria-label="LCN Consulting home">
+      <img src="https://static.wixstatic.com/media/4e8c2e_7674cb0ffbae44ed8695d6a3108ab084~mv2.png/v1/fill/w_311,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LCN%20Logo%20UPDATED%202024-1.png" alt="LCN Consulting" width="148" height="52" loading="eager"/>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nl active" data-tab="home" href="#home">Home</a>
+      <a class="nl" data-tab="about" href="#about">About</a>
+      <div class="dd">
+        <button class="nl" data-trigger="services">Services ▾</button>
+        <div class="dd-menu">
+          <a class="dd-item" data-tab="services-ci" href="#services-ci">Competitive Intelligence</a>
+          <a class="dd-item" data-tab="services-qual" href="#services-qual">Qualitative Research</a>
+          <a class="dd-item" data-tab="services-quant" href="#services-quant">Quantitative Research</a>
+          <a class="dd-item" data-tab="services-analytics" href="#services-analytics">Advanced Analytics</a>
+          <a class="dd-item" data-tab="services-consulting" href="#services-consulting">Commercial Consulting</a>
+        </div>
+      </div>
+      <a class="nl" data-tab="why-lcn" href="#why-lcn">Why Choose LCN</a>
+      <div class="dd">
+        <button class="nl" data-trigger="resources">Resources ▾</button>
+        <div class="dd-menu">
+          <a class="dd-item" data-tab="news" href="#news">News &amp; Events</a>
+          <a class="dd-item" data-tab="blog" href="#blog">Blog</a>
+          <a class="dd-item" data-tab="careers" href="#careers">Careers</a>
+        </div>
+      </div>
+      <a class="nl" data-tab="contact" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ═══ MAIN ═══ -->
+<main class="wrap">
+
+  <!-- HOME -->
+  <section class="pg on" data-page="home">
+    <div class="hero-grid">
+      <div>
+        <span class="label">Dimensional Insights &amp; Analytics</span>
+        <h1>Decision-ready intelligence for pharma leaders.</h1>
+        <p class="lead">LCN Consulting helps pharmaceutical organizations make intelligent business decisions — finding clarity in crowded market environments through a unified Dimensional Intelligence approach that no single-service vendor can replicate.</p>
+        <div class="btns">
+          <a class="btn btn-navy" data-go="services-ci">Explore Services</a>
+          <a class="btn btn-outline" data-go="contact">Speak with LCN</a>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2.5rem">
+          <div class="stat"><strong>100+</strong><span>Brand engagements across top 20 &amp; mid-cap pharma</span></div>
+          <div class="stat"><strong>2006</strong><span>Founded with exclusive pharma &amp; biotech focus</span></div>
+          <div class="stat"><strong>#1</strong><span>Ranked above competitors — Seton Hall University</span></div>
+        </div>
+      </div>
+      <div>
+        <img class="img-hero" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/0beefcc797911e8185632c5bcc7a0c48ba291228.jpg" alt="Pharma consulting strategy team"/>
+        <div class="blockquote" style="margin-top:1.5rem">
+          <p>"Where others deliver research components, LCN delivers a single, decision-ready solution."</p>
+        </div>
+      </div>
+    </div>
+    <img class="img-full" style="margin-top:3rem" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/5ce293acb189a3c2b260985307ba5b6097fb932d.jpg" alt="Pharma strategic advisory board session"/>
+    <div class="g3" style="margin-top:2rem">
+      <div class="card"><div class="kicker">What LCN is</div><h3>Enterprise Insights Partner</h3><p style="margin-top:.6rem">The enterprise insights partner for pharma leaders accountable for high-stakes decisions across brands and functions.</p></div>
+      <div class="card"><div class="kicker">How it works</div><h3>Dimensional Intelligence</h3><p style="margin-top:.6rem">One operating system that governs how evidence is selected, integrated, and interpreted — driven by your business problem, not pre-selected methodologies.</p></div>
+      <div class="card"><div class="kicker">Why it matters</div><h3>Boardroom-Defensible Answers</h3><p style="margin-top:.6rem">Every insight is triangulated, pressure-tested, and synthesized into clear implications and trade-offs leaders can stand behind.</p></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="pg" data-page="about">
+    <div class="shell">
+      <div class="sh">
+        <span class="label">About LCN</span>
+        <h2>A different kind of pharma insights partner.</h2>
+        <p class="lead">Founded in 2006 with an exclusive focus on pharmaceutical and biotech organizations, LCN's Dimensional Intelligence system integrates competitive intelligence, primary research, advanced analytics, and strategic consulting into one coordinated insight stream.</p>
+      </div>
+      <img class="img-full" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d71797e97b7a356d34bf0517c2a16d813f7f152f.jpg" alt="Pharmaceutical consulting team collaborating"/>
+      <div class="g3">
+        <div class="card"><div class="kicker">Who we are</div><h3>Exclusively Pharma</h3><p style="margin-top:.6rem">Unlike generalist consulting firms, LCN was built exclusively for pharmaceutical and biotech clients — every tool, methodology, and senior consultant is pharma-focused.</p></div>
+        <div class="card"><div class="kicker">Our system</div><h3>Dimensional Intelligence</h3><p style="margin-top:.6rem">A proprietary operating system that integrates primary CI, qualitative and quantitative research, advanced analytics, and consulting into one unified, decision-ready output.</p></div>
+        <div class="card"><div class="kicker">Our standard</div><h3>Ring the Bell</h3><p style="margin-top:.6rem">Every LCN deliverable goes through a rigorous internal pressure-testing process before client delivery — ensuring the analysis is airtight and the recommendations are defensible.</p></div>
+      </div>
+      <div class="g2">
+        <div class="panel">
+          <div class="kicker">Leadership</div>
+          <h3>Senior-level engagement from day one.</h3>
+          <p style="margin-top:.7rem">LCN does not staff junior associates on your most important projects. Every engagement is led by senior pharmaceutical professionals with hands-on commercial experience across top 20 and mid-cap biopharma organizations.</p>
+          <div class="badges" style="margin-top:1.25rem">
+            <span class="badge">Former Pharma Executives</span>
+            <span class="badge">Commercial Strategy</span>
+            <span class="badge">CI Specialists</span>
+            <span class="badge">Market Research Experts</span>
+            <span class="badge">Analytics Leaders</span>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="kicker">Validated performance</div>
+          <h3>Independently ranked #1 by pharma decision-makers.</h3>
+          <p style="margin-top:.7rem">Seton Hall University Stillman School of Business independently studied LCN against competing firms. LCN ranked above all competitors on accuracy, insight quality, client service, trust, and report quality.</p>
+          <img class="img-section" style="height:180px;margin:1.25rem 0 0" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c5f48660253f5d68a42d17f36a6896712e3e2022.jpg" alt="Strategic planning session"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE: CI -->
+  <section class="pg" data-page="services-ci">
+    <div class="shell">
+      <div class="sh"><span class="label">Services</span><h2>Competitive Intelligence</h2><p class="lead">A continuous, structured view of the external landscape — tracking competitor pipeline activity, clinical trial developments, regulatory milestones, and commercial moves that matter most to your brand strategy.</p></div>
+      <img class="img-full" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/e220ec40a15faf55b937a7c2e106f6733c2f640b.jpg" alt="Pharmaceutical CI conference"/>
+      <div class="g2">
+        <div class="card"><div class="kicker">Approach</div><h3>Dimensional CI goes beyond monitoring.</h3><p style="margin-top:.6rem">LCN integrates signals across scientific, clinical, regulatory, commercial, and stakeholder dimensions — synthesizing them into strategic implications you can act on, not just information you need to interpret.</p></div>
+        <div class="card"><div class="kicker">Designed for</div><h3>Brand, commercial, and strategy functions.</h3><p style="margin-top:.6rem">From launch readiness and threat assessment to portfolio planning and war-gaming, LCN's CI is built for decisions requiring the highest level of competitive clarity.</p></div>
+      </div>
+      <div class="g3">
+        <div class="card card-dark"><div class="kicker">Deliverable</div><h3>CI Reports &amp; Briefings</h3><p style="margin-top:.5rem">Structured, decision-ready reports on competitive events, pipeline shifts, and market dynamics.</p></div>
+        <div class="card card-dark"><div class="kicker">Deliverable</div><h3>War-Gaming &amp; Scenario Planning</h3><p style="margin-top:.5rem">Facilitated sessions that stress-test brand strategy against the most dangerous competitive scenarios.</p></div>
+        <div class="card card-dark"><div class="kicker">Deliverable</div><h3>Ongoing Monitoring Programs</h3><p style="margin-top:.5rem">Continuous tracking tailored to your competitive set with quarterly synthesis reviews.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE: QUAL -->
+  <section class="pg" data-page="services-qual">
+    <div class="shell">
+      <div class="sh"><span class="label">Services</span><h2>Qualitative Research</h2><p class="lead">Uncover the motivations, perceptions, and unmet needs that shape how physicians, payers, patients, and other stakeholders think and behave — giving brand teams the depth of understanding they need to develop differentiated strategies.</p></div>
+      <img class="img-full" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d71797e97b7a356d34bf0517c2a16d813f7f152f.jpg" alt="Qualitative research stakeholder session"/>
+      <div class="g2">
+        <div class="card"><div class="kicker">Methodology</div><h3>Stakeholder-driven insight gathering.</h3><p style="margin-top:.6rem">In-depth interviews, advisory boards, ethnographic research, and focused group discussions with physicians, KOLs, payers, and patients — designed around the specific decision at hand.</p></div>
+        <div class="card"><div class="kicker">Output</div><h3>Insight that drives strategy.</h3><p style="margin-top:.6rem">Every qualitative engagement is synthesized through LCN's Dimensional Intelligence framework — translating raw stakeholder perspectives into clear strategic implications and recommended actions.</p></div>
+      </div>
+      <div class="g3">
+        <div class="card card-dark"><div class="kicker">Format</div><h3>In-Depth Interviews</h3><p style="margin-top:.5rem">One-on-one structured conversations with physicians, payers, and other decision-relevant stakeholders.</p></div>
+        <div class="card card-dark"><div class="kicker">Format</div><h3>Advisory Boards</h3><p style="margin-top:.5rem">Facilitated expert panels that pressure-test brand positioning, messaging, and strategic assumptions.</p></div>
+        <div class="card card-dark"><div class="kicker">Format</div><h3>Ethnographic Research</h3><p style="margin-top:.5rem">Real-world observation of treatment decisions to uncover implicit behavioral drivers.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE: QUANT -->
+  <section class="pg" data-page="services-quant">
+    <div class="shell">
+      <div class="sh"><span class="label">Services</span><h2>Quantitative Research</h2><p class="lead">Statistically rigorous, data-backed validation of the key assumptions driving brand strategy, market sizing, positioning, and demand forecasting across physician, payer, and patient segments.</p></div>
+      <img class="img-full" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/53352f1efe429512f006f496c56f00294fa0217d.jpg" alt="Pharmaceutical market research dashboard"/>
+      <div class="g2">
+        <div class="card"><div class="kicker">What we measure</div><h3>Brand perception, opportunity, and demand.</h3><p style="margin-top:.6rem">From brand equity tracking and message testing to conjoint analysis and market segmentation — designed to answer the specific commercial questions your team is accountable for.</p></div>
+        <div class="card"><div class="kicker">Output</div><h3>Numbers that defend decisions.</h3><p style="margin-top:.6rem">Every deliverable connects statistical findings to business implications and clear recommendations — not data dumps for your team to interpret alone.</p></div>
+      </div>
+      <div class="g3">
+        <div class="card card-dark"><div class="kicker">Application</div><h3>Brand Equity &amp; Tracking</h3><p style="margin-top:.5rem">Longitudinal measurement of brand health, awareness, perception, and prescribing intent.</p></div>
+        <div class="card card-dark"><div class="kicker">Application</div><h3>Market Sizing</h3><p style="margin-top:.5rem">Rigorous estimation of addressable patient populations, market potential, and revenue opportunity.</p></div>
+        <div class="card card-dark"><div class="kicker">Application</div><h3>Message &amp; Concept Testing</h3><p style="margin-top:.5rem">Statistical validation of promotional messaging, positioning, and value proposition resonance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE: ANALYTICS -->
+  <section class="pg" data-page="services-analytics">
+    <div class="shell">
+      <div class="sh"><span class="label">Services</span><h2>Advanced Analytics</h2><p class="lead">Complex, multi-source data translated into structured models that support long-range planning, AOP development, competitive simulation, and portfolio prioritization — giving commercial teams a rigorous analytical foundation.</p></div>
+      <img class="img-full" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/678a1e11b5ebdc2c4eb1c75e8522532d26a51960.jpg" alt="Pharma analytics dashboard"/>
+      <div class="g2">
+        <div class="card"><div class="kicker">Approach</div><h3>Evidence-backed modeling for defensible projections.</h3><p style="margin-top:.6rem">Grounded in primary research data, secondary market data, and competitive intelligence — ensuring models reflect real-world dynamics rather than spreadsheet assumptions alone.</p></div>
+        <div class="card"><div class="kicker">Output</div><h3>Built for LRP, AOP, and board-level review.</h3><p style="margin-top:.6rem">With clear scenario logic, sensitivity analysis, and strategic interpretation built in — designed to withstand scrutiny at the highest levels of organizational decision-making.</p></div>
+      </div>
+      <div class="g3">
+        <div class="card card-dark"><div class="kicker">Capability</div><h3>Demand Forecasting</h3><p style="margin-top:.5rem">Epidemiology-grounded, scenario-based demand models for LRP and AOP planning across lifecycle stages.</p></div>
+        <div class="card card-dark"><div class="kicker">Capability</div><h3>Competitive Simulation</h3><p style="margin-top:.5rem">Dynamic modeling of competitive entry, pricing, and access scenarios and impact on brand share.</p></div>
+        <div class="card card-dark"><div class="kicker">Capability</div><h3>Segmentation &amp; Targeting</h3><p style="margin-top:.5rem">Data-driven identification and prioritization of high-value physician, payer, and patient segments.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE: CONSULTING -->
+  <section class="pg" data-page="services-consulting">
+    <div class="shell">
+      <div class="sh"><span class="label">Services</span><h2>Commercial Consulting</h2><p class="lead">Senior advisory support across brand strategy, launch planning, market entry, lifecycle management, and portfolio prioritization — bridging the gap between research findings and commercial execution.</p></div>
+      <img class="img-full" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c5f48660253f5d68a42d17f36a6896712e3e2022.jpg" alt="Pharma commercial strategy boardroom"/>
+      <div class="g2">
+        <div class="card"><div class="kicker">Advisory model</div><h3>Senior-level engagement, not junior delivery.</h3><p style="margin-top:.6rem">Consulting engagements led by experienced pharmaceutical commercial strategists who have operated in the same roles as our clients — bringing practical, credible perspectives to the most complex strategic challenges.</p></div>
+        <div class="card"><div class="kicker">Integration</div><h3>Consulting powered by your own intelligence.</h3><p style="margin-top:.6rem">LCN's commercial consulting is uniquely informed by CI, primary research, and analytics from within the same firm — creating a connected, evidence-driven advisory experience no external strategy firm can replicate.</p></div>
+      </div>
+      <div class="g3">
+        <div class="card card-dark"><div class="kicker">Focus area</div><h3>Launch Strategy &amp; Readiness</h3><p style="margin-top:.5rem">Pre-launch positioning, messaging, market access strategy, and KOL engagement planning.</p></div>
+        <div class="card card-dark"><div class="kicker">Focus area</div><h3>Lifecycle Management</h3><p style="margin-top:.5rem">Strategic planning for products at peak, facing LOE, or requiring repositioning to extend commercial value.</p></div>
+        <div class="card card-dark"><div class="kicker">Focus area</div><h3>Portfolio &amp; Pipeline Strategy</h3><p style="margin-top:.5rem">Evidence-based prioritization and investment guidance across enterprise asset portfolios.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY LCN -->
+  <section class="pg" data-page="why-lcn">
+    <div class="shell">
+      <div class="sh"><span class="label">Why Choose LCN</span><h2>Proven, validated, and trusted at enterprise scale.</h2><p class="lead">LCN was independently ranked above competing firms by pharmaceutical strategic decision-makers in a Seton Hall University Stillman School of Business study — outperforming on accuracy, insight quality, client service, and trust.</p></div>
+      <img class="img-full" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c5f48660253f5d68a42d17f36a6896712e3e2022.jpg" alt="Pharma leaders reviewing strategic planning"/>
+      <div class="g2">
+        <div class="blockquote" style="align-self:start">
+          <p>"Where others deliver research components, LCN delivers a single, decision-ready solution engineered for boardroom-level scrutiny."</p>
+          <p style="margin-top:.9rem;font-size:.875rem;color:var(--muted)">— LCN Consulting positioning</p>
+        </div>
+        <div class="panel">
+          <div class="kicker">Independent validation</div>
+          <h3>Ranked #1 by pharma strategic decision-makers.</h3>
+          <p style="margin-top:.7rem">Seton Hall University ranked LCN above competing firms on the five attributes that matter most: accuracy, insight quality, client service, trust, and report quality.</p>
+          <div class="badges" style="margin-top:1.25rem">
+            <span class="badge">Accuracy</span><span class="badge">Insight Quality</span><span class="badge">Client Service</span><span class="badge">Trust</span><span class="badge">Report Quality</span>
+          </div>
+        </div>
+      </div>
+      <div class="g4">
+        <div class="stat"><strong>100+</strong><span>Brand engagements</span></div>
+        <div class="stat"><strong>20+</strong><span>Years pharma focus</span></div>
+        <div class="stat"><strong>#1</strong><span>Seton Hall ranking</span></div>
+        <div class="stat"><strong>5</strong><span>Integrated capabilities</span></div>
+      </div>
+      <img class="img-full" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/0beefcc797911e8185632c5bcc7a0c48ba291228.jpg" alt="Pharma consulting team strategy session"/>
+    </div>
+  </section>
+
+  <!-- NEWS & EVENTS -->
+  <section class="pg" data-page="news">
+    <div class="shell">
+      <div class="sh"><span class="label">Resources</span><h2>News &amp; Events</h2><p class="lead">Stay up to date with LCN's presence at major pharmaceutical industry conferences, events, and company milestones.</p></div>
+      <img class="img-full" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/e220ec40a15faf55b937a7c2e106f6733c2f640b.jpg" alt="Pharmaceutical industry conference"/>
+      <div class="g3">
+        <div class="card"><img class="img-card" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/5ce293acb189a3c2b260985307ba5b6097fb932d.jpg" alt="Intellus conference"/><div class="kicker">Conference</div><h3>Intellus Worldwide 2025</h3><p style="margin-top:.5rem">LCN participated in the Intellus Worldwide Summit, engaging with pharmaceutical insights and analytics leaders across the industry.</p></div>
+        <div class="card"><img class="img-card" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/a9678b508408591693c90b5d47f69aae8ca2a985.jpg" alt="DCAT Week"/><div class="kicker">Industry Event</div><h3>DCAT Week 2026</h3><p style="margin-top:.5rem">LCN is attending DCAT Week 2026 in New York City, connecting with strategic stakeholders across the pharmaceutical and biotech landscape.</p></div>
+        <div class="card"><img class="img-card" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/c5f48660253f5d68a42d17f36a6896712e3e2022.jpg" alt="Seton Hall validation"/><div class="kicker">Company Update</div><h3>Seton Hall Validation</h3><p style="margin-top:.5rem">LCN's Dimensional Intelligence model was independently validated by Seton Hall University, outperforming competitors on accuracy, quality, and trust.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="pg" data-page="blog">
+    <div class="shell">
+      <div class="sh"><span class="label">Resources</span><h2>Insight from the field.</h2><p class="lead">LCN shares perspectives on competitive intelligence, dimensional analytics, and strategic decision-making for pharmaceutical leaders.</p></div>
+      <div class="g2">
+        <div class="card"><img class="img-card" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/fec29e7cdee2bee53991f6826f46bfb3c7703a6e.jpg" alt="Competitive intelligence framework"/><div class="kicker">Featured Article</div><h3>What Really is Dimensional Competitive Intelligence?</h3><p style="margin-top:.6rem">An exploration of how dimensional CI goes beyond traditional monitoring to deliver fully triangulated, forward-looking strategic intelligence for pharma decision-makers.</p></div>
+        <div class="card"><img class="img-card" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/678a1e11b5ebdc2c4eb1c75e8522532d26a51960.jpg" alt="Analytics process"/><div class="kicker">Process</div><h3>LCN Process: Ring the Bell Session</h3><p style="margin-top:.6rem">A closer look at LCN's internal methodology for pressure-testing insights before delivery — ensuring every recommendation is boardroom-defensible.</p></div>
+      </div>
+      <div class="g2">
+        <div class="card"><img class="img-card" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/91a2b40a73a5a0afb3c44a7f22e5c1af36c4b5e0.jpg" alt="Pharma strategy"/><div class="kicker">Strategy</div><h3>The Case for Integrated Intelligence in Pharma</h3><p style="margin-top:.6rem">Why disconnected research vendors create blind spots — and how Dimensional Intelligence eliminates them.</p></div>
+        <div class="card"><img class="img-card" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/0beefcc797911e8185632c5bcc7a0c48ba291228.jpg" alt="Decision support"/><div class="kicker">Analytics</div><h3>Forecasting in Uncertain Markets: A Dimensional Approach</h3><p style="margin-top:.6rem">How LCN's analytics team builds demand forecasts that hold up under board scrutiny even when market dynamics are shifting rapidly.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAREERS -->
+  <section class="pg" data-page="careers">
+    <div class="shell">
+      <div class="sh"><span class="label">Resources</span><h2>Join a team that engineers clarity.</h2><p class="lead">LCN is built on deep pharma expertise, rigorous analytical discipline, and a culture of precision. We look for professionals passionate about translating complexity into clear strategic direction.</p></div>
+      <img class="img-full" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/a9678b508408591693c90b5d47f69aae8ca2a985.jpg" alt="Pharma consulting team"/>
+      <div class="g2">
+        <div class="card"><div class="kicker">Current Openings</div><h3>No open positions at this time.</h3><p style="margin-top:.6rem">We are not actively hiring at the moment, but we welcome inquiries from exceptional candidates with backgrounds in pharma market research, competitive intelligence, analytics, or strategic consulting.</p><div class="btns"><a class="btn btn-navy" data-go="contact">Send a General Inquiry</a></div></div>
+        <div class="card"><div class="kicker">What We Look For</div><h3>Deep pharma knowledge. Strategic instinct. Analytical rigor.</h3><p style="margin-top:.6rem">Our team includes former pharmaceutical professionals with hands-on experience in insights, analytics, and commercial strategy across top 20 and mid-cap biopharma organizations.</p><div class="badges" style="margin-top:1.25rem"><span class="badge">Pharma Industry Experience</span><span class="badge">Market Research</span><span class="badge">Competitive Intelligence</span><span class="badge">Analytics</span><span class="badge">Commercial Strategy</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="pg" data-page="contact">
+    <div class="shell">
+      <div class="band">
+        <span class="label label-red" style="background:rgba(215,25,32,.2);color:#fca5a5">Get in Touch</span>
+        <h2 style="margin-top:.5rem">Let's solve your next decision challenge together.</h2>
+        <p style="margin-top:.75rem">LCN works with enterprise pharma and biotech organizations on their most critical brand, portfolio, and lifecycle decisions. Reach out to start the conversation.</p>
+        <div class="btns">
+          <a class="btn btn-white" href="mailto:ecriscione@lcnconsult.com">ecriscione@lcnconsult.com</a>
+          <a class="btn btn-ghost" href="https://www.lcnconsult.com/contact" target="_blank" rel="noopener">Visit lcnconsult.com</a>
+        </div>
+      </div>
+      <img class="img-full" src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/91c5b6e9a1d3f74f55e8023ce0f3bd79a8e75da7.jpg" alt="Pharma consulting office"/>
+      <div class="g2">
+        <div class="card"><div class="kicker">Headquarters</div><h3>West Caldwell, NJ</h3><p style="margin-top:.6rem">175 Fairfield Ave, Suite 2D<br/>West Caldwell, NJ 07006<br/><br/><strong style="color:var(--navy)">Phone:</strong> 973-226-0344<br/><strong style="color:var(--navy)">Email:</strong> ecriscione@lcnconsult.com</p></div>
+        <div class="card"><div class="kicker">Partnership model</div><h3>Built for enterprise pharma partners.</h3><p style="margin-top:.6rem">From primary intelligence research to advanced analytics and commercial consulting, LCN operates as a fully integrated strategic partner — not a vendor. Over 100 brand engagements across top 20 and mid-cap biopharma companies.</p><div class="btns"><a class="btn btn-navy" href="https://www.linkedin.com/company/lcn-consulting/" target="_blank" rel="noopener">Connect on LinkedIn</a></div></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div class="ftr-brand">
+        <img src="https://static.wixstatic.com/media/4e8c2e_7674cb0ffbae44ed8695d6a3108ab084~mv2.png/v1/fill/w_311,h_108,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LCN%20Logo%20UPDATED%202024-1.png" alt="LCN Consulting"/>
+        <p>Dimensional Insights and Analytics for strategic pharmaceutical decision-making.</p>
+      </div>
+      <div class="ftr-col">
+        <h5>Services</h5>
+        <a data-go="services-ci">Competitive Intelligence</a>
+        <a data-go="services-qual">Qualitative Research</a>
+        <a data-go="services-quant">Quantitative Research</a>
+        <a data-go="services-analytics">Advanced Analytics</a>
+        <a data-go="services-consulting">Commercial Consulting</a>
+      </div>
+      <div class="ftr-col">
+        <h5>Company</h5>
+        <a data-go="about">About LCN</a>
+        <a data-go="why-lcn">Why Choose LCN</a>
+        <a data-go="news">News &amp; Events</a>
+        <a data-go="blog">Blog</a>
+        <a data-go="careers">Careers</a>
+      </div>
+      <div class="ftr-col">
+        <h5>Contact</h5>
+        <p>175 Fairfield Ave, Suite 2D</p>
+        <p>West Caldwell, NJ 07006</p>
+        <p style="margin-top:.5rem">973-226-0344</p>
+        <a href="mailto:ecriscione@lcnconsult.com">ecriscione@lcnconsult.com</a>
+        <a href="https://www.lcnconsult.com" target="_blank" rel="noopener" style="margin-top:.5rem">lcnconsult.com ↗</a>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <p>&copy; 2026 LCN Consulting Inc. All rights reserved.</p>
+      <p>175 Fairfield Ave Suite 2D, West Caldwell, NJ 07006</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const SVC=['services-ci','services-qual','services-quant','services-analytics','services-consulting'];
+  const RES=['news','blog','careers'];
+
+  function activate(tab){
+    document.querySelectorAll('.nl[data-tab]').forEach(el=>el.classList.toggle('active',el.dataset.tab===tab));
+    document.querySelectorAll('.dd-item[data-tab]').forEach(el=>el.classList.toggle('active',el.dataset.tab===tab));
+    document.querySelectorAll('.pg').forEach(el=>el.classList.toggle('on',el.dataset.page===tab));
+    document.querySelectorAll('[data-trigger]').forEach(el=>{
+      const g=el.dataset.trigger;
+      el.classList.toggle('active',(g==='services'&&SVC.includes(tab))||(g==='resources'&&RES.includes(tab)));
+    });
+    window.scrollTo(0,0);
+  }
+
+  document.addEventListener('click',function(e){
+    // nav links
+    const nl=e.target.closest('.nl[data-tab]');
+    if(nl){e.preventDefault();activate(nl.dataset.tab);history.replaceState(null,'','#'+nl.dataset.tab);return;}
+    // dropdown items
+    const di=e.target.closest('.dd-item[data-tab]');
+    if(di){e.preventDefault();activate(di.dataset.tab);history.replaceState(null,'','#'+di.dataset.tab);return;}
+    // data-go buttons/links
+    const go=e.target.closest('[data-go]');
+    if(go){e.preventDefault();activate(go.dataset.go);history.replaceState(null,'','#'+go.dataset.go);return;}
+  });
+
+  activate((location.hash||'#home').replace('#',''));
+})();
+</script>
+</body>
+</html>
