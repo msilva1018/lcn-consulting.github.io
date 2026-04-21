@@ -1,0 +1,3341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="LCN Consulting – Pharma and biotech strategic insights firm delivering boardroom-defensible intelligence. Decision-ready research, competitive intelligence, and strategic consulting since 2006.">
+<meta name="keywords" content="pharma market research, competitive intelligence, biotech consulting, strategic planning, qualitative market research, quantitative market research, pharmaceutical consulting, New Jersey">
+<meta property="og:title" content="LCN Consulting | Pharma & Biotech Strategic Insights">
+<meta property="og:description" content="Turn data into strategy. LCN Consulting delivers Dimensional Intelligence™ for pharmaceutical and biotech leaders facing high-stakes decisions.">
+<title>LCN Consulting | Pharma & Biotech Strategic Insights</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   CSS VARIABLES & RESET
+   ============================================================ */
+:root {
+  --navy: #001F3F;
+  --navy-deep: #001229;
+  --navy-mid: #012E5F;
+  --teal: #0070C0;
+  --teal-light: #1A8AD4;
+  --teal-pale: #E8F4FD;
+  --white: #FFFFFF;
+  --gray-light: #F8F9FA;
+  --gray-mid: #E9ECEF;
+  --gray: #ADB5BD;
+  --charcoal: #343A40;
+  --charcoal-light: #495057;
+  --gold: #C9A84C;
+  --success: #198754;
+
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+
+  --shadow-sm: 0 2px 8px rgba(0,31,63,0.08);
+  --shadow-md: 0 4px 20px rgba(0,31,63,0.12);
+  --shadow-lg: 0 8px 40px rgba(0,31,63,0.16);
+  --shadow-xl: 0 16px 64px rgba(0,31,63,0.20);
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 100px;
+
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--charcoal);
+  background: var(--white);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+button { cursor: pointer; font-family: inherit; border: none; outline: none; }
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-pad { padding: 96px 0; }
+.section-pad-sm { padding: 64px 0; }
+
+/* ============================================================
+   TYPOGRAPHY
+   ============================================================ */
+h1, h2, h3, h4, h5 { font-family: var(--font-display); line-height: 1.15; color: var(--navy); }
+
+h1 { font-size: clamp(2.4rem, 5vw, 4rem); }
+h2 { font-size: clamp(1.8rem, 3.5vw, 2.75rem); }
+h3 { font-size: clamp(1.3rem, 2.5vw, 1.75rem); }
+h4 { font-size: 1.25rem; }
+
+.overline {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.section-title { margin-bottom: 16px; }
+.section-subtitle { font-size: 1.1rem; color: var(--charcoal-light); max-width: 620px; line-height: 1.75; }
+.section-header { margin-bottom: 56px; }
+.section-header.center { text-align: center; }
+.section-header.center .section-subtitle { margin: 0 auto; }
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 30px;
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--teal);
+  color: var(--white);
+  box-shadow: 0 4px 16px rgba(0,112,192,0.35);
+}
+.btn-primary:hover {
+  background: var(--teal-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0,112,192,0.45);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid rgba(255,255,255,0.5);
+}
+.btn-secondary:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: var(--white);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--teal);
+  border: 2px solid var(--teal);
+}
+.btn-outline:hover {
+  background: var(--teal);
+  color: var(--white);
+  transform: translateY(-2px);
+}
+
+.btn-navy {
+  background: var(--navy);
+  color: var(--white);
+}
+.btn-navy:hover {
+  background: var(--navy-mid);
+  transform: translateY(-2px);
+}
+
+.btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  transition: var(--transition-slow);
+  padding: 0;
+}
+
+.site-header.scrolled {
+  background: rgba(0,18,41,0.97);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.site-header:not(.scrolled) {
+  background: transparent;
+}
+
+.nav-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 76px;
+  padding: 0 32px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  display: flex; align-items: center; gap: 12px;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-mark {
+  width: 42px; height: 42px;
+  background: var(--teal);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--white);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.logo-text span {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+  margin-top: 1px;
+}
+
+.nav-links {
+  display: flex; align-items: center; gap: 4px;
+}
+
+.nav-item { position: relative; }
+
+.nav-link {
+  display: flex; align-items: center; gap: 5px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.nav-link:hover, .nav-link.active { color: var(--white); background: rgba(255,255,255,0.1); }
+
+.nav-link .chevron {
+  width: 14px; height: 14px;
+  transition: transform var(--transition);
+}
+
+.nav-item:hover .chevron { transform: rotate(180deg); }
+
+.dropdown {
+  position: absolute; top: calc(100% + 8px); left: 0;
+  min-width: 270px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--gray-mid);
+  opacity: 0; visibility: hidden; transform: translateY(-8px);
+  transition: var(--transition);
+  z-index: 100;
+  overflow: hidden;
+}
+
+.nav-item:hover .dropdown {
+  opacity: 1; visibility: visible; transform: translateY(0);
+}
+
+.dropdown a {
+  display: flex; align-items: flex-start; gap: 12px;
+  padding: 14px 18px;
+  font-size: 0.875rem;
+  color: var(--charcoal);
+  transition: var(--transition);
+  border-bottom: 1px solid var(--gray-mid);
+}
+
+.dropdown a:last-child { border-bottom: none; }
+
+.dropdown a:hover { background: var(--teal-pale); color: var(--teal); }
+
+.dropdown-icon {
+  width: 32px; height: 32px; border-radius: 6px;
+  background: var(--teal-pale);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  color: var(--teal);
+}
+
+.dropdown-icon svg { width: 16px; height: 16px; }
+.dropdown-text strong { display: block; font-weight: 600; font-size: 0.875rem; }
+.dropdown-text small { color: var(--gray); font-size: 0.78rem; line-height: 1.4; }
+
+.nav-cta { margin-left: 16px; }
+
+.nav-toggle {
+  display: none;
+  flex-direction: column; gap: 5px;
+  width: 36px; height: 36px;
+  justify-content: center; align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block; width: 22px; height: 2px;
+  background: var(--white);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* ============================================================
+   MOBILE NAV
+   ============================================================ */
+.mobile-nav {
+  display: none;
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--navy-deep);
+  z-index: 999;
+  padding: 100px 32px 40px;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform var(--transition-slow);
+}
+
+.mobile-nav.open { transform: translateX(0); }
+
+.mobile-nav a {
+  display: block; padding: 14px 0;
+  font-size: 1.1rem; font-weight: 500;
+  color: rgba(255,255,255,0.85);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  transition: var(--transition);
+}
+
+.mobile-nav a:hover { color: var(--white); }
+
+.mobile-nav .mobile-subnav { padding-left: 20px; }
+.mobile-nav .mobile-subnav a { font-size: 0.95rem; color: rgba(255,255,255,0.65); }
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex; align-items: center;
+  overflow: hidden;
+  background: var(--navy-deep);
+}
+
+.hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+}
+
+.hero-bg-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,112,192,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,112,192,0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.hero-bg-glow {
+  position: absolute;
+  width: 700px; height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,112,192,0.18) 0%, transparent 70%);
+  top: -200px; right: -100px;
+  pointer-events: none;
+}
+
+.hero-bg-glow-2 {
+  position: absolute;
+  width: 400px; height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,112,192,0.1) 0%, transparent 70%);
+  bottom: 100px; left: -100px;
+  pointer-events: none;
+}
+
+.hero-data-viz {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 420px;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative; z-index: 1;
+  max-width: 700px;
+  padding: 120px 0 80px;
+}
+
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(0,112,192,0.15);
+  border: 1px solid rgba(0,112,192,0.3);
+  border-radius: var(--radius-pill);
+  padding: 6px 16px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7CC8F5;
+  margin-bottom: 28px;
+}
+
+.hero-badge-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--teal);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.7); }
+}
+
+.hero h1 {
+  color: var(--white);
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: #7CC8F5;
+}
+
+.hero-sub {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.72);
+  margin-bottom: 40px;
+  max-width: 560px;
+  line-height: 1.75;
+}
+
+.hero-actions {
+  display: flex; align-items: center; gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+
+.hero-proof {
+  display: flex; align-items: center; gap: 32px;
+  flex-wrap: wrap;
+}
+
+.hero-proof-item {
+  display: flex; align-items: center; gap: 10px;
+}
+
+.hero-proof-num {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  color: var(--white);
+  line-height: 1;
+}
+
+.hero-proof-label {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.35;
+}
+
+.hero-proof-divider {
+  width: 1px; height: 40px;
+  background: rgba(255,255,255,0.15);
+}
+
+/* SVG chart for hero decoration */
+.hero-chart-svg { width: 100%; height: auto; }
+
+/* ============================================================
+   TRUST BAR
+   ============================================================ */
+.trust-bar {
+  background: var(--navy);
+  padding: 28px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.trust-bar-inner {
+  display: flex; align-items: center; justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.trust-bar-item {
+  display: flex; align-items: center; gap: 10px;
+  color: rgba(255,255,255,0.55);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+.trust-bar-item svg { width: 18px; height: 18px; color: var(--teal); flex-shrink: 0; }
+
+/* ============================================================
+   METRICS
+   ============================================================ */
+.metrics {
+  background: var(--white);
+  padding: 80px 0;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  background: var(--gray-mid);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.metric-card {
+  background: var(--white);
+  padding: 44px 32px;
+  text-align: center;
+  transition: var(--transition);
+  position: relative;
+}
+
+.metric-card:hover { background: var(--teal-pale); }
+
+.metric-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 0; height: 3px;
+  background: var(--teal);
+  transition: width var(--transition-slow);
+}
+
+.metric-card:hover::after { width: 60%; }
+
+.metric-num {
+  font-family: var(--font-display);
+  font-size: 3.2rem;
+  color: var(--navy);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.metric-num sup {
+  font-size: 1.8rem;
+  color: var(--teal);
+}
+
+.metric-label {
+  font-size: 0.88rem;
+  color: var(--charcoal-light);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* ============================================================
+   SERVICES
+   ============================================================ */
+.services { background: var(--gray-light); }
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 36px 32px;
+  border: 1px solid var(--gray-mid);
+  transition: var(--transition-slow);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px; height: 100%;
+  background: var(--teal);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform var(--transition-slow);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: transparent;
+}
+
+.service-card:hover::before { transform: scaleY(1); }
+
+.service-icon {
+  width: 52px; height: 52px;
+  border-radius: 12px;
+  background: var(--teal-pale);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px;
+  color: var(--teal);
+  transition: var(--transition);
+}
+
+.service-card:hover .service-icon {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.service-icon svg { width: 24px; height: 24px; }
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: var(--navy);
+}
+
+.service-card p {
+  font-size: 0.9rem;
+  color: var(--charcoal-light);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.service-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--teal);
+  transition: gap var(--transition);
+}
+
+.service-card:hover .service-link { gap: 10px; }
+.service-link svg { width: 16px; height: 16px; }
+
+/* ============================================================
+   DIMENSIONAL INTELLIGENCE
+   ============================================================ */
+.dimensional {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+}
+
+.dimensional-bg {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,112,192,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,112,192,0.05) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.dimensional-inner {
+  position: relative; z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.dimensional-text .overline { color: #7CC8F5; }
+.dimensional-text h2 { color: var(--white); margin-bottom: 20px; }
+.dimensional-text p { color: rgba(255,255,255,0.72); margin-bottom: 32px; line-height: 1.8; }
+
+.dimensional-pillars {
+  display: flex; flex-direction: column; gap: 16px;
+  margin-bottom: 40px;
+}
+
+.pillar {
+  display: flex; align-items: flex-start; gap: 16px;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.pillar:hover { background: rgba(0,112,192,0.15); border-color: rgba(0,112,192,0.3); }
+
+.pillar-num {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  color: var(--teal);
+  line-height: 1;
+  flex-shrink: 0;
+  width: 36px;
+}
+
+.pillar-text strong {
+  display: block;
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.pillar-text span {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.5;
+}
+
+.dimensional-visual {
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.dim-diagram {
+  width: 100%; max-width: 420px;
+}
+
+/* ============================================================
+   APPROACH / CAR / WAR GAMING
+   ============================================================ */
+.approach { background: var(--white); }
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.approach-features { display: flex; flex-direction: column; gap: 32px; }
+
+.approach-feature {
+  display: flex; gap: 20px;
+  padding: 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-mid);
+  transition: var(--transition);
+}
+
+.approach-feature:hover {
+  border-color: var(--teal);
+  box-shadow: var(--shadow-sm);
+  background: var(--teal-pale);
+}
+
+.approach-feature-icon {
+  width: 48px; height: 48px; flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--white);
+}
+
+.approach-feature-icon svg { width: 22px; height: 22px; }
+
+.approach-feature h4 { color: var(--navy); margin-bottom: 6px; font-size: 1.05rem; }
+.approach-feature p { font-size: 0.875rem; color: var(--charcoal-light); line-height: 1.65; }
+
+.approach-image {
+  position: relative;
+}
+
+.approach-image-main {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  border-radius: var(--radius-lg);
+  aspect-ratio: 4/3;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.approach-image-badge {
+  position: absolute;
+  bottom: -20px; right: -20px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 18px 22px;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  min-width: 140px;
+}
+
+.approach-image-badge strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--teal);
+}
+
+.approach-image-badge span {
+  font-size: 0.75rem;
+  color: var(--charcoal-light);
+  font-weight: 500;
+}
+
+/* ============================================================
+   TESTIMONIALS
+   ============================================================ */
+.testimonials { background: var(--gray-light); }
+
+.testimonials-track {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials-slider {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.testimonial-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 40px;
+  border: 1px solid var(--gray-mid);
+  box-shadow: var(--shadow-sm);
+  flex: 0 0 calc(50% - 12px);
+  min-width: 0;
+}
+
+.testimonial-stars {
+  display: flex; gap: 3px; margin-bottom: 20px;
+  color: var(--gold);
+}
+
+.testimonial-stars svg { width: 18px; height: 18px; fill: currentColor; }
+
+.testimonial-quote {
+  font-size: 1.05rem;
+  color: var(--charcoal);
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.testimonial-quote::before {
+  content: '\201C';
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--teal);
+  opacity: 0.2;
+  position: absolute;
+  top: -20px; left: -10px;
+  line-height: 1;
+}
+
+.testimonial-author {
+  display: flex; align-items: center; gap: 14px;
+}
+
+.testimonial-avatar {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--white);
+  flex-shrink: 0;
+}
+
+.testimonial-author-name { font-weight: 700; font-size: 0.95rem; color: var(--navy); }
+.testimonial-author-title { font-size: 0.82rem; color: var(--charcoal-light); }
+
+.testimonials-controls {
+  display: flex; align-items: center; justify-content: center; gap: 12px;
+  margin-top: 40px;
+}
+
+.t-btn {
+  width: 44px; height: 44px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--white);
+  border: 2px solid var(--gray-mid);
+  color: var(--charcoal);
+  transition: var(--transition);
+}
+
+.t-btn:hover { background: var(--navy); border-color: var(--navy); color: var(--white); }
+.t-btn svg { width: 18px; height: 18px; }
+
+.t-dots { display: flex; gap: 8px; align-items: center; }
+
+.t-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gray);
+  transition: var(--transition);
+  cursor: pointer;
+  border: none;
+}
+
+.t-dot.active { background: var(--teal); transform: scale(1.3); }
+
+/* ============================================================
+   VALIDATION / SETON HALL
+   ============================================================ */
+.validation {
+  background: var(--navy);
+  position: relative;
+  overflow: hidden;
+}
+
+.validation-inner {
+  position: relative; z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.validation-text .overline { color: #7CC8F5; }
+.validation-text h2 { color: var(--white); margin-bottom: 20px; }
+.validation-text p { color: rgba(255,255,255,0.72); line-height: 1.8; margin-bottom: 24px; }
+
+.validation-badge {
+  display: inline-flex; align-items: center; gap: 14px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-md);
+  padding: 18px 24px;
+  margin-top: 8px;
+}
+
+.validation-badge-icon {
+  width: 52px; height: 52px;
+  background: var(--white);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--navy);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.validation-badge-text strong {
+  display: block;
+  color: var(--white);
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.validation-badge-text span {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.55);
+}
+
+.validation-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.v-stat {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.v-stat:hover { background: rgba(0,112,192,0.2); }
+
+.v-stat-num {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  color: var(--white);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.v-stat-num em { color: var(--teal); font-style: normal; }
+.v-stat-label { font-size: 0.82rem; color: rgba(255,255,255,0.55); line-height: 1.4; }
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq { background: var(--white); }
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border: 1px solid var(--gray-mid);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.faq-item.open { border-color: var(--teal); box-shadow: var(--shadow-sm); }
+
+.faq-question {
+  width: 100%;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 20px 24px;
+  background: transparent;
+  text-align: left;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--navy);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.faq-question:hover { background: var(--teal-pale); }
+.faq-item.open .faq-question { background: var(--teal-pale); }
+
+.faq-chevron {
+  width: 20px; height: 20px; flex-shrink: 0;
+  color: var(--teal);
+  transition: transform var(--transition);
+}
+
+.faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+.faq-answer {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.faq-item.open .faq-answer { max-height: 300px; }
+
+.faq-answer p {
+  padding: 0 24px 20px;
+  font-size: 0.875rem;
+  color: var(--charcoal-light);
+  line-height: 1.75;
+}
+
+/* ============================================================
+   CTA SECTION
+   ============================================================ */
+.cta-section {
+  background: linear-gradient(135deg, var(--teal) 0%, #005a9e 100%);
+  padding: 96px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(255,255,255,0.06) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(255,255,255,0.06) 0%, transparent 50%);
+}
+
+.cta-section-inner { position: relative; z-index: 1; }
+
+.cta-section h2 { color: var(--white); margin-bottom: 16px; }
+.cta-section p { color: rgba(255,255,255,0.82); font-size: 1.1rem; margin-bottom: 40px; max-width: 540px; margin-left: auto; margin-right: auto; }
+
+.cta-actions { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+/* ============================================================
+   PAGE HERO (inner pages)
+   ============================================================ */
+.page-hero {
+  background: var(--navy);
+  padding: 140px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-hero-bg {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,112,192,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,112,192,0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.page-hero-inner { position: relative; z-index: 1; }
+
+.breadcrumb {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 16px;
+}
+
+.breadcrumb a { color: rgba(255,255,255,0.5); transition: var(--transition); }
+.breadcrumb a:hover { color: var(--white); }
+.breadcrumb svg { width: 12px; height: 12px; }
+
+.page-hero h1 { color: var(--white); margin-bottom: 16px; }
+.page-hero p { color: rgba(255,255,255,0.72); font-size: 1.1rem; max-width: 560px; }
+
+/* ============================================================
+   ABOUT PAGE
+   ============================================================ */
+.about-story {
+  background: var(--white);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.about-timeline { display: flex; flex-direction: column; gap: 0; }
+
+.timeline-item {
+  display: flex; gap: 20px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 19px; top: 40px;
+  width: 2px;
+  height: calc(100% - 8px);
+  background: var(--gray-mid);
+}
+
+.timeline-item:last-child { padding-bottom: 0; }
+.timeline-item:last-child::before { display: none; }
+
+.timeline-dot {
+  width: 40px; height: 40px; flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--white);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.timeline-content h4 { color: var(--navy); margin-bottom: 6px; }
+.timeline-content p { font-size: 0.875rem; color: var(--charcoal-light); line-height: 1.65; }
+
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.value-card {
+  background: var(--gray-light);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  border: 1px solid var(--gray-mid);
+  transition: var(--transition);
+}
+
+.value-card:hover { border-color: var(--teal); background: var(--teal-pale); }
+
+.value-icon {
+  width: 44px; height: 44px;
+  background: var(--teal-pale);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--teal);
+  margin-bottom: 14px;
+}
+
+.value-icon svg { width: 22px; height: 22px; }
+.value-card h4 { color: var(--navy); margin-bottom: 6px; font-size: 1rem; }
+.value-card p { font-size: 0.85rem; color: var(--charcoal-light); line-height: 1.6; }
+
+/* ============================================================
+   SERVICES PAGE
+   ============================================================ */
+.services-detail { background: var(--white); }
+
+.service-detail-grid { display: flex; flex-direction: column; gap: 80px; }
+
+.service-detail-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.service-detail-item:nth-child(even) { direction: rtl; }
+.service-detail-item:nth-child(even) > * { direction: ltr; }
+
+.service-detail-visual {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  border-radius: var(--radius-lg);
+  aspect-ratio: 4/3;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-detail-icon-large {
+  width: 80px; height: 80px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(255,255,255,0.9);
+}
+
+.service-detail-icon-large svg { width: 40px; height: 40px; }
+
+.service-detail-text h3 { color: var(--navy); margin-bottom: 14px; }
+.service-detail-text p { color: var(--charcoal-light); line-height: 1.8; margin-bottom: 20px; }
+
+.service-bullets {
+  display: flex; flex-direction: column; gap: 10px;
+  margin-bottom: 24px;
+}
+
+.service-bullet {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 0.9rem;
+  color: var(--charcoal);
+}
+
+.service-bullet-dot {
+  width: 20px; height: 20px; flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--teal-pale);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--teal);
+  margin-top: 2px;
+}
+
+.service-bullet-dot svg { width: 12px; height: 12px; }
+
+/* ============================================================
+   PROJECTS / CASE STUDIES
+   ============================================================ */
+.projects { background: var(--gray-light); }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.project-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--gray-mid);
+  transition: var(--transition-slow);
+}
+
+.project-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-xl); border-color: transparent; }
+
+.project-card-img {
+  height: 200px;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-tag {
+  position: absolute; top: 16px; left: 16px;
+  background: var(--teal);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.project-card-body { padding: 28px; }
+.project-card-body h4 { color: var(--navy); margin-bottom: 10px; font-size: 1.05rem; }
+.project-card-body p { font-size: 0.875rem; color: var(--charcoal-light); line-height: 1.65; margin-bottom: 20px; }
+
+.project-card-meta {
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 0.78rem;
+  color: var(--gray);
+}
+
+/* ============================================================
+   NEWS / BLOG
+   ============================================================ */
+.news { background: var(--white); }
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+}
+
+.news-featured {
+  background: var(--gray-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--gray-mid);
+}
+
+.news-featured-img {
+  height: 280px;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%);
+  position: relative;
+  display: flex; align-items: flex-end; padding: 24px;
+}
+
+.news-featured-tag {
+  position: absolute; top: 20px; left: 20px;
+  background: var(--teal);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.news-featured-date { color: rgba(255,255,255,0.7); font-size: 0.82rem; }
+
+.news-featured-body { padding: 28px; }
+.news-featured-body h3 { color: var(--navy); margin-bottom: 12px; }
+.news-featured-body p { color: var(--charcoal-light); font-size: 0.9rem; line-height: 1.75; }
+
+.news-list { display: flex; flex-direction: column; gap: 16px; }
+
+.news-item {
+  background: var(--gray-light);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  border: 1px solid var(--gray-mid);
+  transition: var(--transition);
+}
+
+.news-item:hover { border-color: var(--teal); background: var(--teal-pale); }
+
+.news-item-tag {
+  display: inline-block;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 8px;
+}
+
+.news-item h5 { color: var(--navy); font-size: 0.95rem; margin-bottom: 4px; font-family: var(--font-body); font-weight: 600; }
+.news-item p { font-size: 0.82rem; color: var(--charcoal-light); }
+
+/* ============================================================
+   CONTACT PAGE
+   ============================================================ */
+.contact { background: var(--gray-light); }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 64px;
+  align-items: start;
+}
+
+.contact-info { display: flex; flex-direction: column; gap: 28px; }
+
+.contact-info-item {
+  display: flex; gap: 16px;
+  align-items: flex-start;
+}
+
+.contact-info-icon {
+  width: 48px; height: 48px; flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--white);
+}
+
+.contact-info-icon svg { width: 20px; height: 20px; }
+
+.contact-info-text strong { display: block; font-weight: 600; color: var(--navy); margin-bottom: 3px; }
+.contact-info-text span { font-size: 0.875rem; color: var(--charcoal-light); line-height: 1.55; }
+.contact-info-text a { color: var(--teal); transition: var(--transition); }
+.contact-info-text a:hover { color: var(--navy); }
+
+.contact-form-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--gray-mid);
+}
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.form-group { display: flex; flex-direction: column; gap: 7px; margin-bottom: 20px; }
+
+.form-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--charcoal);
+}
+
+.form-label span { color: var(--teal); }
+
+.form-input {
+  padding: 12px 16px;
+  border: 2px solid var(--gray-mid);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--charcoal);
+  background: var(--white);
+  transition: var(--transition);
+  outline: none;
+  width: 100%;
+}
+
+.form-input:focus { border-color: var(--teal); box-shadow: 0 0 0 4px rgba(0,112,192,0.08); }
+
+textarea.form-input { resize: vertical; min-height: 130px; }
+
+select.form-input { cursor: pointer; }
+
+.form-submit { width: 100%; padding: 15px; font-size: 1rem; }
+
+.form-success {
+  display: none;
+  text-align: center;
+  padding: 32px;
+  background: var(--teal-pale);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(0,112,192,0.2);
+}
+
+.form-success svg { width: 48px; height: 48px; color: var(--success); margin: 0 auto 12px; }
+.form-success h4 { color: var(--navy); margin-bottom: 6px; }
+.form-success p { font-size: 0.875rem; color: var(--charcoal-light); }
+
+/* ============================================================
+   CAREERS
+   ============================================================ */
+.careers { background: var(--white); }
+
+.careers-grid { display: flex; flex-direction: column; gap: 20px; }
+
+.job-card {
+  display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  padding: 28px 32px;
+  border: 1px solid var(--gray-mid);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  transition: var(--transition);
+}
+
+.job-card:hover { border-color: var(--teal); box-shadow: var(--shadow-md); background: var(--teal-pale); }
+
+.job-info h4 { color: var(--navy); margin-bottom: 6px; font-size: 1.05rem; }
+.job-meta { display: flex; gap: 16px; flex-wrap: wrap; }
+.job-tag {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 0.78rem;
+  color: var(--charcoal-light);
+}
+.job-tag svg { width: 13px; height: 13px; }
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.site-footer {
+  background: var(--navy-deep);
+  color: rgba(255,255,255,0.65);
+  padding: 72px 0 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1.2fr;
+  gap: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-brand { }
+
+.footer-logo {
+  display: flex; align-items: center; gap: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-logo .logo-mark { background: var(--teal); }
+.footer-logo .logo-text { color: var(--white); }
+
+.footer-brand p {
+  font-size: 0.875rem;
+  line-height: 1.75;
+  color: rgba(255,255,255,0.55);
+  margin-bottom: 24px;
+}
+
+.footer-social { display: flex; gap: 10px; }
+
+.social-link {
+  width: 38px; height: 38px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(255,255,255,0.5);
+  transition: var(--transition);
+}
+
+.social-link:hover { background: var(--teal); border-color: var(--teal); color: var(--white); }
+.social-link svg { width: 16px; height: 16px; }
+
+.footer-col h5 {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 20px;
+}
+
+.footer-links { display: flex; flex-direction: column; gap: 10px; }
+
+.footer-links a {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.5);
+  transition: var(--transition);
+  display: flex; align-items: center; gap: 6px;
+}
+
+.footer-links a:hover { color: var(--white); }
+.footer-links a::before { content: '→'; font-size: 0.7rem; opacity: 0; transition: var(--transition); }
+.footer-links a:hover::before { opacity: 1; }
+
+.footer-contact-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 14px;
+}
+
+.footer-contact-item svg { width: 15px; height: 15px; flex-shrink: 0; margin-top: 3px; color: var(--teal); }
+.footer-contact-item a { color: rgba(255,255,255,0.5); transition: var(--transition); }
+.footer-contact-item a:hover { color: var(--white); }
+
+.footer-bottom {
+  padding: 24px 0;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-bottom p { font-size: 0.82rem; color: rgba(255,255,255,0.35); }
+
+.footer-bottom-links {
+  display: flex; gap: 24px;
+}
+
+.footer-bottom-links a {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.35);
+  transition: var(--transition);
+}
+
+.footer-bottom-links a:hover { color: rgba(255,255,255,0.7); }
+
+/* ============================================================
+   PAGE SYSTEM
+   ============================================================ */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ============================================================
+   SCROLL ANIMATIONS
+   ============================================================ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in-delay-1 { transition-delay: 0.1s; }
+.fade-in-delay-2 { transition-delay: 0.2s; }
+.fade-in-delay-3 { transition-delay: 0.3s; }
+.fade-in-delay-4 { transition-delay: 0.4s; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1024px) {
+  .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .dimensional-inner { grid-template-columns: 1fr; gap: 48px; }
+  .dimensional-visual { display: none; }
+  .approach-grid { grid-template-columns: 1fr; gap: 40px; }
+  .approach-image { display: none; }
+  .validation-inner { grid-template-columns: 1fr; gap: 40px; }
+  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .news-grid { grid-template-columns: 1fr; }
+  .service-detail-item { grid-template-columns: 1fr; }
+  .service-detail-item:nth-child(even) { direction: ltr; }
+  .service-detail-visual { display: none; }
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+}
+
+@media (max-width: 768px) {
+  .nav-links, .nav-cta { display: none; }
+  .nav-toggle { display: flex; }
+  .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: 1fr; }
+  .testimonial-card { flex: 0 0 100%; }
+  .hero h1 { font-size: 2.2rem; }
+  .section-pad { padding: 64px 0; }
+  .faq-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .contact-form-card { padding: 28px 20px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: 1fr; }
+  .hero-proof { gap: 20px; }
+  .hero-proof-divider { display: none; }
+  .job-card { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 480px) {
+  .metrics-grid { grid-template-columns: 1fr; }
+  .hero-actions { flex-direction: column; align-items: flex-start; }
+  .trust-bar-inner { flex-direction: column; gap: 20px; }
+}
+
+/* ============================================================
+   UTILITY
+   ============================================================ */
+.text-teal { color: var(--teal); }
+.text-navy { color: var(--navy); }
+.text-white { color: var(--white); }
+.bg-navy { background: var(--navy); }
+.bg-teal { background: var(--teal); }
+.mt-8 { margin-top: 8px; }
+.mt-16 { margin-top: 16px; }
+.mt-24 { margin-top: 24px; }
+.mb-32 { margin-bottom: 32px; }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     SITE HEADER / NAV
+     ============================================================ -->
+<header class="site-header" id="siteHeader" role="banner">
+  <nav class="nav-inner" aria-label="Main navigation">
+    <a href="#" class="nav-logo" onclick="showPage('home'); return false;" aria-label="LCN Consulting Home">
+      <div class="logo-mark" aria-hidden="true">LCN</div>
+      <div class="logo-text">
+        LCN Consulting
+        <span>Strategic Pharma Insights</span>
+      </div>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li class="nav-item"><a href="#" class="nav-link active" onclick="showPage('home'); return false;">Home</a></li>
+
+      <li class="nav-item">
+        <a href="#" class="nav-link" onclick="showPage('services'); return false;" aria-haspopup="true" aria-expanded="false">
+          Services
+          <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+        </a>
+        <div class="dropdown" role="menu" aria-label="Services submenu">
+          <a href="#" onclick="showServiceDetail('commercial'); return false;" role="menuitem">
+            <div class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+            <div class="dropdown-text"><strong>Strategic Commercial Consulting</strong><small>High-stakes launch & portfolio strategy</small></div>
+          </a>
+          <a href="#" onclick="showServiceDetail('planning'); return false;" role="menuitem">
+            <div class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+            <div class="dropdown-text"><strong>Strategic Planning</strong><small>Roadmaps & war gaming facilitation</small></div>
+          </a>
+          <a href="#" onclick="showServiceDetail('qualitative'); return false;" role="menuitem">
+            <div class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
+            <div class="dropdown-text"><strong>Qualitative Market Research</strong><small>KOL interviews, advisory boards, IDIs</small></div>
+          </a>
+          <a href="#" onclick="showServiceDetail('quantitative'); return false;" role="menuitem">
+            <div class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+            <div class="dropdown-text"><strong>Quantitative Market Research</strong><small>Surveys, conjoint analysis, forecasting</small></div>
+          </a>
+          <a href="#" onclick="showServiceDetail('ci'); return false;" role="menuitem">
+            <div class="dropdown-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <div class="dropdown-text"><strong>Competitive Intelligence</strong><small>Pipeline monitoring & CAR reports</small></div>
+          </a>
+        </div>
+      </li>
+
+      <li class="nav-item"><a href="#" class="nav-link" onclick="showPage('about'); return false;">About / Approach</a></li>
+      <li class="nav-item"><a href="#" class="nav-link" onclick="showPage('projects'); return false;">Projects</a></li>
+      <li class="nav-item"><a href="#" class="nav-link" onclick="showPage('news'); return false;">News & Events</a></li>
+      <li class="nav-item"><a href="#" class="nav-link" onclick="showPage('careers'); return false;">Careers</a></li>
+      <li class="nav-item"><a href="#" class="nav-link" onclick="showPage('contact'); return false;">Contact</a></li>
+    </ul>
+
+    <a href="#" class="btn btn-primary nav-cta" onclick="showPage('contact'); return false;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+      Request Consultation
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+  <a href="#" onclick="showPage('home'); closeMobileNav(); return false;">Home</a>
+  <a href="#" onclick="showPage('services'); closeMobileNav(); return false;">Services</a>
+  <div class="mobile-subnav">
+    <a href="#" onclick="showServiceDetail('commercial'); closeMobileNav(); return false;">Strategic Commercial Consulting</a>
+    <a href="#" onclick="showServiceDetail('planning'); closeMobileNav(); return false;">Strategic Planning</a>
+    <a href="#" onclick="showServiceDetail('qualitative'); closeMobileNav(); return false;">Qualitative Market Research</a>
+    <a href="#" onclick="showServiceDetail('quantitative'); closeMobileNav(); return false;">Quantitative Market Research</a>
+    <a href="#" onclick="showServiceDetail('ci'); closeMobileNav(); return false;">Competitive Intelligence</a>
+  </div>
+  <a href="#" onclick="showPage('about'); closeMobileNav(); return false;">About / Approach</a>
+  <a href="#" onclick="showPage('projects'); closeMobileNav(); return false;">Projects</a>
+  <a href="#" onclick="showPage('news'); closeMobileNav(); return false;">News & Events</a>
+  <a href="#" onclick="showPage('careers'); closeMobileNav(); return false;">Careers</a>
+  <a href="#" onclick="showPage('contact'); closeMobileNav(); return false;">Contact</a>
+</nav>
+
+
+<!-- ============================================================
+     HOME PAGE
+     ============================================================ -->
+<main>
+<div class="page active" id="page-home">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-headline">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-bg-glow"></div>
+      <div class="hero-bg-glow-2"></div>
+    </div>
+
+    <!-- Decorative Data Viz -->
+    <div class="hero-data-viz" aria-hidden="true">
+      <svg viewBox="0 0 400 360" class="hero-chart-svg" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="barGrad1" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#0070C0" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#0070C0" stop-opacity="0.3"/>
+          </linearGradient>
+          <linearGradient id="barGrad2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#1A8AD4" stop-opacity="0.7"/>
+            <stop offset="100%" stop-color="#1A8AD4" stop-opacity="0.2"/>
+          </linearGradient>
+        </defs>
+        <!-- Grid lines -->
+        <line x1="40" y1="40" x2="40" y2="280" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <line x1="40" y1="280" x2="380" y2="280" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+        <line x1="40" y1="220" x2="380" y2="220" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="4,4"/>
+        <line x1="40" y1="160" x2="380" y2="160" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="4,4"/>
+        <line x1="40" y1="100" x2="380" y2="100" stroke="rgba(255,255,255,0.05)" stroke-width="1" stroke-dasharray="4,4"/>
+        <!-- Bars -->
+        <rect x="65" y="160" width="38" height="120" rx="4" fill="url(#barGrad2)"/>
+        <rect x="120" y="120" width="38" height="160" rx="4" fill="url(#barGrad1)"/>
+        <rect x="175" y="140" width="38" height="140" rx="4" fill="url(#barGrad2)"/>
+        <rect x="230" y="80" width="38" height="200" rx="4" fill="url(#barGrad1)"/>
+        <rect x="285" y="100" width="38" height="180" rx="4" fill="url(#barGrad2)"/>
+        <rect x="340" y="60" width="38" height="220" rx="4" fill="url(#barGrad1)"/>
+        <!-- Trend line -->
+        <polyline points="84,140 139,100 194,118 249,60 304,82 359,45" fill="none" stroke="#7CC8F5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.9"/>
+        <!-- Dots on line -->
+        <circle cx="84" cy="140" r="5" fill="#7CC8F5" opacity="0.9"/>
+        <circle cx="139" cy="100" r="5" fill="#7CC8F5" opacity="0.9"/>
+        <circle cx="194" cy="118" r="5" fill="#7CC8F5" opacity="0.9"/>
+        <circle cx="249" cy="60" r="5" fill="#7CC8F5" opacity="0.9"/>
+        <circle cx="304" cy="82" r="5" fill="#7CC8F5" opacity="0.9"/>
+        <circle cx="359" cy="45" r="5" fill="#7CC8F5" opacity="0.9"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge" role="note">
+          <span class="hero-badge-dot" aria-hidden="true"></span>
+          Pharma &amp; Biotech Strategic Intelligence
+        </div>
+
+        <h1 id="hero-headline">
+          Make better decisions<br>with <em>clearer insight</em>
+        </h1>
+
+        <p class="hero-sub">
+          LCN Consulting transforms complex market data into boardroom-defensible strategy. We unify primary research, competitive intelligence, and analytics into a single system of truth — empowering pharma and biotech leaders to act with confidence.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary" onclick="showPage('contact'); return false;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            Request a Consultation
+          </a>
+          <a href="#" class="btn btn-secondary" onclick="showPage('about'); return false;">
+            Our Approach
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="hero-proof" role="list" aria-label="Key statistics">
+          <div class="hero-proof-item" role="listitem">
+            <div class="hero-proof-num">100+</div>
+            <div class="hero-proof-label">Pharma &amp; Biotech<br>Brands Served</div>
+          </div>
+          <div class="hero-proof-divider" aria-hidden="true"></div>
+          <div class="hero-proof-item" role="listitem">
+            <div class="hero-proof-num">18+</div>
+            <div class="hero-proof-label">Years of<br>Industry Expertise</div>
+          </div>
+          <div class="hero-proof-divider" aria-hidden="true"></div>
+          <div class="hero-proof-item" role="listitem">
+            <div class="hero-proof-num">5</div>
+            <div class="hero-proof-label">Core Research<br>Disciplines</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <div class="trust-bar" role="region" aria-label="Trust indicators">
+    <div class="container">
+      <ul class="trust-bar-inner" role="list">
+        <li class="trust-bar-item" role="listitem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          Seton Hall University Validated Methodology
+        </li>
+        <li class="trust-bar-item" role="listitem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          Founded 2006 · West Caldwell, NJ
+        </li>
+        <li class="trust-bar-item" role="listitem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+          Dimensional Intelligence™ System
+        </li>
+        <li class="trust-bar-item" role="listitem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Boardroom-Defensible Deliverables
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- METRICS -->
+  <section class="metrics" aria-labelledby="metrics-title">
+    <div class="container">
+      <div class="section-header center fade-in">
+        <span class="overline">By the Numbers</span>
+        <h2 class="section-title" id="metrics-title">Proven track record since 2006</h2>
+        <p class="section-subtitle">Two decades of turning pharmaceutical uncertainty into strategic clarity for brands at every stage of the lifecycle.</p>
+      </div>
+      <div class="metrics-grid" role="list">
+        <div class="metric-card fade-in fade-in-delay-1" role="listitem">
+          <div class="metric-num">100<sup>+</sup></div>
+          <div class="metric-label">Pharma &amp; Biotech Brands Served</div>
+        </div>
+        <div class="metric-card fade-in fade-in-delay-2" role="listitem">
+          <div class="metric-num">18<sup>+</sup></div>
+          <div class="metric-label">Years of Industry Experience</div>
+        </div>
+        <div class="metric-card fade-in fade-in-delay-3" role="listitem">
+          <div class="metric-num">5<sup>+</sup></div>
+          <div class="metric-label">Core Research Disciplines Unified</div>
+        </div>
+        <div class="metric-card fade-in fade-in-delay-4" role="listitem">
+          <div class="metric-num">1<sup>st</sup></div>
+          <div class="metric-label">Academically Validated CI Methodology</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section-pad" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="overline">What We Do</span>
+        <h2 class="section-title" id="services-title">Five disciplines. One unified system.</h2>
+        <p class="section-subtitle">Our integrated approach means insights across every dimension — primary research, CI, analytics, and strategy — work together, not in silos.</p>
+      </div>
+      <div class="services-grid">
+
+        <a href="#" class="service-card fade-in fade-in-delay-1" onclick="showServiceDetail('commercial'); return false;" aria-label="Strategic Commercial Consulting service page">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3>Strategic Commercial Consulting</h3>
+          <p>High-stakes launch strategy, market access advisory, and portfolio optimization grounded in deep therapeutic area intelligence.</p>
+          <span class="service-link">Explore service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+
+        <a href="#" class="service-card fade-in fade-in-delay-2" onclick="showServiceDetail('planning'); return false;" aria-label="Strategic Planning service page">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>Strategic Planning</h3>
+          <p>Scenario planning, war gaming facilitation, and roadmap development to stress-test your strategy before it hits the market.</p>
+          <span class="service-link">Explore service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+
+        <a href="#" class="service-card fade-in fade-in-delay-3" onclick="showServiceDetail('qualitative'); return false;" aria-label="Qualitative Market Research service page">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Primary Qualitative Research</h3>
+          <p>KOL interviews, advisory boards, dyads, and focus groups that uncover the "why" behind prescribing behavior and market dynamics.</p>
+          <span class="service-link">Explore service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+
+        <a href="#" class="service-card fade-in fade-in-delay-1" onclick="showServiceDetail('quantitative'); return false;" aria-label="Quantitative Market Research service page">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Primary Quantitative Research</h3>
+          <p>Physician surveys, conjoint analysis, message testing, and demand forecasting to quantify market opportunities with precision.</p>
+          <span class="service-link">Explore service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+
+        <a href="#" class="service-card fade-in fade-in-delay-2" onclick="showServiceDetail('ci'); return false;" aria-label="Competitive Intelligence service page">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>Competitive Intelligence</h3>
+          <p>Continuous pipeline monitoring, conference intelligence, and CAR (Comprehensive Analysis and Recommendations) reports that keep you ahead of the competitive curve.</p>
+          <span class="service-link">Explore service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </a>
+
+        <div class="service-card fade-in fade-in-delay-3" style="background: var(--navy); border-color: transparent; cursor: default;">
+          <div class="service-icon" style="background: rgba(255,255,255,0.1); color: #7CC8F5;" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3 style="color: #fff;">Dimensional Intelligence™</h3>
+          <p style="color: rgba(255,255,255,0.65);">Our proprietary system unifies all five disciplines into a single, coherent intelligence platform — eliminating the gaps that fragment traditional research.</p>
+          <a href="#" class="service-link" style="color: #7CC8F5;" onclick="showPage('about'); return false;">Learn the system <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIMENSIONAL INTELLIGENCE -->
+  <section class="dimensional section-pad" aria-labelledby="dim-title">
+    <div class="dimensional-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="dimensional-inner">
+        <div class="dimensional-text fade-in">
+          <span class="overline">Our Proprietary System</span>
+          <h2 id="dim-title">Dimensional Intelligence™ — one system that sees the whole picture</h2>
+          <p>Traditional research delivers isolated snapshots. Our Dimensional Intelligence™ system fuses primary research, competitive intelligence, analytics, and strategic consulting into a continuously updated, decision-ready intelligence platform designed specifically for pharma and biotech leaders.</p>
+
+          <div class="dimensional-pillars">
+            <div class="pillar">
+              <div class="pillar-num">01</div>
+              <div class="pillar-text">
+                <strong>Unified Research Architecture</strong>
+                <span>Qualitative and quantitative findings are structured to inform, not contradict, each other — every insight reinforces the strategic narrative.</span>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-num">02</div>
+              <div class="pillar-text">
+                <strong>Continuous Competitive Monitoring</strong>
+                <span>Real-time pipeline tracking and CAR reports ensure your strategy reflects the competitive reality, not yesterday's landscape.</span>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-num">03</div>
+              <div class="pillar-text">
+                <strong>Decision-Ready Deliverables</strong>
+                <span>Every output is structured for executive review — boardroom-defensible, problem-first, and grounded in validated methodology.</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-primary" onclick="showPage('about'); return false;">
+            Explore Our Approach
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="dimensional-visual" aria-hidden="true">
+          <!-- Decorative system diagram -->
+          <svg viewBox="0 0 380 400" xmlns="http://www.w3.org/2000/svg" style="max-width:380px; width:100%;">
+            <defs>
+              <radialGradient id="circGrad" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#0070C0" stop-opacity="0.2"/>
+                <stop offset="100%" stop-color="#0070C0" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <!-- Outer ring -->
+            <circle cx="190" cy="200" r="160" fill="none" stroke="rgba(0,112,192,0.15)" stroke-width="1" stroke-dasharray="6,4"/>
+            <circle cx="190" cy="200" r="120" fill="none" stroke="rgba(0,112,192,0.2)" stroke-width="1"/>
+            <!-- Center -->
+            <circle cx="190" cy="200" r="60" fill="url(#circGrad)"/>
+            <circle cx="190" cy="200" r="60" fill="none" stroke="rgba(0,112,192,0.4)" stroke-width="2"/>
+            <text x="190" y="195" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#7CC8F5" font-weight="bold">Dimensional</text>
+            <text x="190" y="213" text-anchor="middle" font-family="Georgia, serif" font-size="11" fill="#7CC8F5" font-weight="bold">Intelligence™</text>
+            <!-- Satellite nodes -->
+            <circle cx="190" cy="48" r="30" fill="rgba(0,112,192,0.15)" stroke="rgba(0,112,192,0.3)" stroke-width="1.5"/>
+            <text x="190" y="44" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.75)" font-family="sans-serif">Competitive</text>
+            <text x="190" y="56" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.75)" font-family="sans-serif">Intelligence</text>
+
+            <circle cx="346" cy="140" r="30" fill="rgba(0,112,192,0.15)" stroke="rgba(0,112,192,0.3)" stroke-width="1.5"/>
+            <text x="346" y="136" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.75)" font-family="sans-serif">Quantitative</text>
+            <text x="346" y="148" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.75)" font-family="sans-serif">Research</text>
+
+            <circle cx="316" cy="314" r="30" fill="rgba(0,112,192,0.15)" stroke="rgba(0,112,192,0.3)" stroke-width="1.5"/>
+            <text x="316" y="310" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.75)" font-family="sans-serif">Qualitative</text>
+            <text x="316" y="322" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.75)" font-family="sans-serif">Research</text>
+
+            <circle cx="64" cy="314" r="30" fill="rgba(0,112,192,0.15)" stroke="rgba(0,112,192,0.3)" stroke-width="1.5"/>
+            <text x="64" y="310" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.75)" font-family="sans-serif">Strategic</text>
+            <text x="64" y="322" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.75)" font-family="sans-serif">Planning</text>
+
+            <circle cx="34" cy="140" r="30" fill="rgba(0,112,192,0.15)" stroke="rgba(0,112,192,0.3)" stroke-width="1.5"/>
+            <text x="34" y="136" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.75)" font-family="sans-serif">Commercial</text>
+            <text x="34" y="148" text-anchor="middle" font-size="8.5" fill="rgba(255,255,255,0.75)" font-family="sans-serif">Consulting</text>
+
+            <!-- Connecting lines -->
+            <line x1="190" y1="78" x2="190" y2="140" stroke="rgba(0,112,192,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+            <line x1="316" y1="162" x2="248" y2="170" stroke="rgba(0,112,192,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+            <line x1="290" y1="290" x2="236" y2="248" stroke="rgba(0,112,192,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+            <line x1="90" y1="290" x2="153" y2="248" stroke="rgba(0,112,192,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+            <line x1="64" y1="162" x2="130" y2="172" stroke="rgba(0,112,192,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPROACH FEATURES -->
+  <section class="approach section-pad" aria-labelledby="approach-title">
+    <div class="container">
+      <div class="approach-grid">
+        <div>
+          <span class="overline">Our Methodology</span>
+          <h2 class="section-title fade-in" id="approach-title">Problem-first. Evidence-driven. Boardroom-ready.</h2>
+          <p class="section-subtitle fade-in" style="margin-bottom: 40px;">We don't start with methodology — we start with your decision. Every engagement is structured around the strategic question you need to answer, not the research vehicle we want to deploy.</p>
+
+          <div class="approach-features">
+            <div class="approach-feature fade-in">
+              <div class="approach-feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+              </div>
+              <div>
+                <h4>CAR: Comprehensive Analysis &amp; Recommendations</h4>
+                <p>Our flagship deliverable format synthesizes all research findings into a structured, executive-ready output that speaks the language of the boardroom — not the research lab.</p>
+              </div>
+            </div>
+            <div class="approach-feature fade-in fade-in-delay-1">
+              <div class="approach-feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <div>
+                <h4>War Gaming &amp; Scenario Facilitation</h4>
+                <p>We simulate competitive responses and market scenarios before they happen — so your team can pressure-test strategy and prepare for every contingency.</p>
+              </div>
+            </div>
+            <div class="approach-feature fade-in fade-in-delay-2">
+              <div class="approach-feature-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2z"/></svg>
+              </div>
+              <div>
+                <h4>Academically Validated Methodology</h4>
+                <p>Our CI framework is validated through Seton Hall University — providing an academic foundation for the rigor and reproducibility of our approach.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="approach-image fade-in" aria-hidden="true">
+          <div class="approach-image-main">
+            <svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" style="width:80%; opacity:0.7;">
+              <rect x="20" y="160" width="35" height="50" rx="4" fill="rgba(0,112,192,0.4)"/>
+              <rect x="70" y="120" width="35" height="90" rx="4" fill="rgba(0,112,192,0.6)"/>
+              <rect x="120" y="90" width="35" height="120" rx="4" fill="rgba(0,112,192,0.5)"/>
+              <rect x="170" y="50" width="35" height="160" rx="4" fill="rgba(0,112,192,0.7)"/>
+              <rect x="220" y="30" width="35" height="180" rx="4" fill="rgba(0,112,192,0.9)"/>
+              <polyline points="37,150 87,110 137,80 187,42 237,22" fill="none" stroke="#7CC8F5" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="37" cy="150" r="5" fill="#7CC8F5"/>
+              <circle cx="87" cy="110" r="5" fill="#7CC8F5"/>
+              <circle cx="137" cy="80" r="5" fill="#7CC8F5"/>
+              <circle cx="187" cy="42" r="5" fill="#7CC8F5"/>
+              <circle cx="237" cy="22" r="5" fill="#7CC8F5"/>
+            </svg>
+          </div>
+          <div class="approach-image-badge">
+            <strong>Since</strong>
+            <strong style="color: var(--navy);">2006</strong>
+            <span>Delivering insight</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section-pad" aria-labelledby="testimonials-title">
+    <div class="container">
+      <div class="section-header center fade-in">
+        <span class="overline">Client Perspectives</span>
+        <h2 class="section-title" id="testimonials-title">What pharma leaders say</h2>
+        <p class="section-subtitle">Decision-makers across therapeutic areas trust LCN Consulting to deliver intelligence that holds up under scrutiny.</p>
+      </div>
+
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonials-slider" id="testimonialsSlider" role="list">
+          <div class="testimonial-card fade-in" role="listitem">
+            <div class="testimonial-stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-quote">LCN's CAR reports gave us a single, coherent view of the competitive landscape that our entire leadership team could get behind. The level of rigor and clarity is unlike anything we've seen from other research partners.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">VP</div>
+              <div>
+                <div class="testimonial-author-name">VP, Commercial Strategy</div>
+                <div class="testimonial-author-title">Top-10 Global Pharmaceutical Company</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in fade-in-delay-1" role="listitem">
+            <div class="testimonial-stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-quote">Their war gaming session transformed how our brand team thinks about competitive response. We walked in with assumptions and walked out with a strategy. The facilitation was exceptional.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">BD</div>
+              <div>
+                <div class="testimonial-author-name">Brand Director</div>
+                <div class="testimonial-author-title">Mid-Size Specialty Pharma Company</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card fade-in fade-in-delay-2" role="listitem">
+            <div class="testimonial-stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-quote">We engaged LCN for competitive intelligence ahead of a major launch. Their pipeline monitoring caught a competitor move six months before it was widely reported. That lead time was invaluable.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">CM</div>
+              <div>
+                <div class="testimonial-author-name">Chief Marketing Officer</div>
+                <div class="testimonial-author-title">Biotech Company, Series D</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" role="listitem">
+            <div class="testimonial-stars" aria-label="5 stars">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <p class="testimonial-quote">The qualitative research LCN conducted with our KOLs surfaced insights our internal team never would have uncovered. Their interviewers truly understand the clinical and commercial dimensions simultaneously.</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">MS</div>
+              <div>
+                <div class="testimonial-author-name">Medical Science Liaison Director</div>
+                <div class="testimonial-author-title">Rare Disease Pharmaceutical Company</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-controls" role="group" aria-label="Testimonials navigation">
+        <button class="t-btn" id="tPrev" aria-label="Previous testimonials">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="t-dots">
+          <button class="t-dot active" data-idx="0" aria-label="Testimonials page 1" aria-current="true"></button>
+          <button class="t-dot" data-idx="1" aria-label="Testimonials page 2"></button>
+        </div>
+        <button class="t-btn" id="tNext" aria-label="Next testimonials">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALIDATION -->
+  <section class="validation section-pad" aria-labelledby="validation-title">
+    <div class="container">
+      <div class="validation-inner">
+        <div class="validation-text fade-in">
+          <span class="overline">Academic Validation</span>
+          <h2 id="validation-title">The only CI methodology validated by a major research university</h2>
+          <p>LCN Consulting's competitive intelligence framework has been rigorously evaluated and validated by Seton Hall University — providing a level of methodological credibility that no other pharma CI firm can claim. This academic foundation ensures every CAR report is reproducible, defensible, and grounded in peer-reviewed research principles.</p>
+          <p>This isn't just a differentiator — it's a guarantee of quality that matters when decisions involve billions of dollars and patient outcomes.</p>
+          <div class="validation-badge" role="note" aria-label="Seton Hall University Validation">
+            <div class="validation-badge-icon" aria-hidden="true">SH</div>
+            <div class="validation-badge-text">
+              <strong>Seton Hall University Validated</strong>
+              <span>Competitive Intelligence Methodology · South Orange, NJ</span>
+            </div>
+          </div>
+        </div>
+        <div class="validation-stats fade-in" role="list" aria-label="Validation statistics">
+          <div class="v-stat" role="listitem">
+            <div class="v-stat-num">100<em>+</em></div>
+            <div class="v-stat-label">Brands Served Across All Therapy Areas</div>
+          </div>
+          <div class="v-stat" role="listitem">
+            <div class="v-stat-num">18<em>+</em></div>
+            <div class="v-stat-label">Years of Continuous Pharma Research</div>
+          </div>
+          <div class="v-stat" role="listitem">
+            <div class="v-stat-num">1<em>st</em></div>
+            <div class="v-stat-label">University-Validated CI Methodology</div>
+          </div>
+          <div class="v-stat" role="listitem">
+            <div class="v-stat-num">5<em>+</em></div>
+            <div class="v-stat-label">Integrated Research Disciplines</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section-pad" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="section-header center fade-in">
+        <span class="overline">Common Questions</span>
+        <h2 class="section-title" id="faq-title">Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-grid" role="list">
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFAQ(this)">
+            What is Dimensional Intelligence™?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Dimensional Intelligence™ is LCN's proprietary framework that unifies primary qualitative research, quantitative research, competitive intelligence, analytics, and strategic consulting into a single, coherent system. Rather than delivering siloed research reports, we create an integrated intelligence platform that enables faster, more confident decision-making.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFAQ(this)">
+            What is a CAR report?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>CAR stands for Comprehensive Analysis and Recommendations. It's LCN's signature deliverable format — a structured, executive-ready document that synthesizes all relevant research findings into clear strategic recommendations. CAR reports are designed to be presented directly to senior leadership and boards without additional interpretation.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFAQ(this)">
+            What therapeutic areas do you cover?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>LCN Consulting has served 100+ brands across a wide range of therapeutic areas including oncology, immunology, rare disease, neuroscience, cardiovascular, and specialty markets. Our team brings both commercial and clinical expertise to every engagement.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFAQ(this)">
+            How does your war gaming process work?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Our war gaming sessions are structured workshops where your team plays different roles — your brand, key competitors, payers, and prescribers — to simulate how each stakeholder would respond to your strategic moves. Sessions are typically facilitated over one to two days, with pre-work and post-session recommendations integrated into a final strategic output.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFAQ(this)">
+            Do you work with biotech startups as well as large pharma?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Yes. LCN serves clients ranging from early-stage biotech companies preparing for their first commercialization to global pharmaceutical organizations managing complex, multi-asset portfolios. Our work scales to the complexity and strategic needs of each client.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" onclick="toggleFAQ(this)">
+            What makes LCN different from traditional market research firms?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer" role="region">
+            <p>Three things set us apart: (1) Our Dimensional Intelligence™ system integrates all research disciplines into a unified framework rather than delivering isolated reports. (2) Our methodology is academically validated by Seton Hall University. (3) We are problem-first consultants, not methodology sellers — every engagement begins with your decision, not our tools.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" aria-labelledby="cta-title">
+    <div class="container cta-section-inner">
+      <span class="overline" style="color: rgba(255,255,255,0.7);">Ready to Act?</span>
+      <h2 id="cta-title">Transform insight into strategy</h2>
+      <p>Join 100+ pharma and biotech brands that trust LCN Consulting for the intelligence behind their most important decisions.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-navy" onclick="showPage('contact'); return false;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          Request a Consultation
+        </a>
+        <a href="tel:9732260344" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+          973-226-0344
+        </a>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-home -->
+
+
+<!-- ============================================================
+     ABOUT PAGE
+     ============================================================ -->
+<div class="page" id="page-about">
+  <div class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="container page-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="#" onclick="showPage('home'); return false;">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span aria-current="page">About / Our Approach</span>
+      </nav>
+      <h1>Where Pharma Insight Becomes Strategy</h1>
+      <p>Founded in 2006, LCN Consulting was built on a single belief: research only has value when it drives decisions. Everything we do flows from that conviction.</p>
+    </div>
+  </div>
+
+  <section class="about-story section-pad">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <span class="overline">Our Story</span>
+          <h2 style="margin-bottom: 24px;">Built for the decisions that matter most</h2>
+          <p style="color: var(--charcoal-light); margin-bottom: 32px; line-height: 1.8;">LCN Consulting was founded in 2006 with a clear mission: to give pharmaceutical and biotech decision-makers the kind of intelligence that doesn't just inform — it compels action. Over nearly two decades, we've refined our approach into a proprietary system that no other firm can replicate.</p>
+          <p style="color: var(--charcoal-light); margin-bottom: 40px; line-height: 1.8;">Our team combines deep therapeutic area expertise with rigorous research methodology and strategic consulting acumen. We speak fluently in the language of brand teams, medical affairs, commercial operations, and the boardroom — because we've spent our careers at the intersection of all four.</p>
+
+          <div class="about-timeline" aria-label="Company history timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-label="2006">06</div>
+              <div class="timeline-content">
+                <h4>Founded in 2006</h4>
+                <p>LCN Consulting established in West Caldwell, NJ, with a focus on competitive intelligence and strategic research for the pharmaceutical sector.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-label="Early growth">10s</div>
+              <div class="timeline-content">
+                <h4>Dimensional Intelligence™ System Developed</h4>
+                <p>After serving dozens of major pharmaceutical brands, we codified our integrated approach into the Dimensional Intelligence™ framework — unifying all research disciplines.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-label="Academic validation">SH</div>
+              <div class="timeline-content">
+                <h4>Seton Hall University Validation</h4>
+                <p>Our CI methodology became the first in the pharma industry to receive formal academic validation from a major research university, cementing our commitment to rigor.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot" aria-label="2024+">Now</div>
+              <div class="timeline-content">
+                <h4>100+ Brands and Growing</h4>
+                <p>Today, LCN Consulting serves 100+ pharma and biotech brands, from global majors to early-stage biotech companies preparing for first commercialization.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="overline">Our Values</span>
+          <h2 style="margin-bottom: 24px;">The principles that guide every engagement</h2>
+          <div class="values-grid">
+            <div class="value-card">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              </div>
+              <h4>Problem-First</h4>
+              <p>We never lead with methodology. Every engagement begins with the strategic question you need to answer.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              </div>
+              <h4>Rigorous</h4>
+              <p>Academic validation and peer-reviewed methodology principles underpin every deliverable we produce.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <h4>Decisive</h4>
+              <p>We synthesize complexity into clarity. Our outputs don't leave decisions to interpretation — they compel action.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+              <h4>Collaborative</h4>
+              <p>We work as an extension of your team — embedded in your strategic process, not parachuted in at the end.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h4>Defensible</h4>
+              <p>Every insight we deliver can withstand scrutiny — from your brand team to your board to external regulators.</p>
+            </div>
+            <div class="value-card">
+              <div class="value-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+              </div>
+              <h4>Integrated</h4>
+              <p>All five of our research disciplines are designed to work together — producing insights no single methodology can deliver alone.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section" aria-labelledby="about-cta-title">
+    <div class="container cta-section-inner">
+      <span class="overline" style="color: rgba(255,255,255,0.7);">Work With Us</span>
+      <h2 id="about-cta-title">Ready to meet your strategic intelligence partner?</h2>
+      <p>Let's talk about the decision you're facing and how LCN can deliver the clarity you need.</p>
+      <div class="cta-actions">
+        <a href="#" class="btn btn-navy" onclick="showPage('contact'); return false;">Request a Consultation</a>
+        <a href="#" class="btn btn-secondary" onclick="showPage('services'); return false;">Explore Services</a>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-about -->
+
+
+<!-- ============================================================
+     SERVICES PAGE
+     ============================================================ -->
+<div class="page" id="page-services">
+  <div class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="container page-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="#" onclick="showPage('home'); return false;">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span aria-current="page" id="services-breadcrumb">Services</span>
+      </nav>
+      <h1 id="service-page-title">Our Services</h1>
+      <p id="service-page-subtitle">Five integrated disciplines designed to deliver decision-ready intelligence at every stage of the pharma lifecycle.</p>
+    </div>
+  </div>
+
+  <section class="services-detail section-pad">
+    <div class="container">
+      <div id="services-overview-content">
+        <div class="services-grid">
+          <a href="#" class="service-card" onclick="showServiceDetail('commercial'); return false;" aria-label="Strategic Commercial Consulting">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+            </div>
+            <h3>Strategic Commercial Consulting</h3>
+            <p>Launch strategy, market access advisory, and portfolio optimization.</p>
+            <span class="service-link">View service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+          <a href="#" class="service-card" onclick="showServiceDetail('planning'); return false;" aria-label="Strategic Planning">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3>Strategic Planning</h3>
+            <p>War gaming, scenario planning, and brand roadmap development.</p>
+            <span class="service-link">View service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+          <a href="#" class="service-card" onclick="showServiceDetail('qualitative'); return false;" aria-label="Qualitative Market Research">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3>Primary Qualitative Research</h3>
+            <p>KOL interviews, advisory boards, and in-depth qualitative methodologies.</p>
+            <span class="service-link">View service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+          <a href="#" class="service-card" onclick="showServiceDetail('quantitative'); return false;" aria-label="Quantitative Market Research">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Primary Quantitative Research</h3>
+            <p>Physician surveys, conjoint analysis, and demand forecasting models.</p>
+            <span class="service-link">View service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+          <a href="#" class="service-card" onclick="showServiceDetail('ci'); return false;" aria-label="Competitive Intelligence">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3>Competitive Intelligence</h3>
+            <p>CAR reports, pipeline monitoring, and conference intelligence programs.</p>
+            <span class="service-link">View service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+          </a>
+        </div>
+      </div>
+
+      <!-- SERVICE DETAIL CONTENT (injected by JS) -->
+      <div id="service-detail-content" style="display: none;">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </section>
+</div><!-- /page-services -->
+
+
+<!-- ============================================================
+     PROJECTS PAGE
+     ============================================================ -->
+<div class="page" id="page-projects">
+  <div class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="container page-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="#" onclick="showPage('home'); return false;">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span aria-current="page">Projects & Case Studies</span>
+      </nav>
+      <h1>Projects & Case Studies</h1>
+      <p>Real-world examples of how LCN Consulting's Dimensional Intelligence™ system has shaped strategy for pharma and biotech leaders.</p>
+    </div>
+  </div>
+
+  <section class="projects section-pad">
+    <div class="container">
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-card-img" aria-hidden="true">
+            <div class="project-tag">Competitive Intelligence</div>
+            <svg viewBox="0 0 100 60" style="width:60%; opacity:0.5;" xmlns="http://www.w3.org/2000/svg"><polyline points="5,50 20,30 40,38 60,15 80,22 95,8" fill="none" stroke="#7CC8F5" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+          <div class="project-card-body">
+            <h4>Pre-Launch CI Program: Oncology Asset</h4>
+            <p>Delivered 18 months of continuous competitive monitoring ahead of a key oncology launch, capturing a critical competitor readout 5 months before public disclosure and enabling a proactive strategy pivot.</p>
+            <div class="project-card-meta">
+              <span>Oncology · CAR Report</span>
+              <a href="#" class="text-teal" style="font-weight: 600; font-size: 0.82rem;" onclick="showPage('contact'); return false;">Learn more →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-img" aria-hidden="true">
+            <div class="project-tag">War Gaming</div>
+            <svg viewBox="0 0 100 60" style="width:60%; opacity:0.5;" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="35" width="12" height="20" rx="2" fill="#0070C0" opacity="0.6"/><rect x="25" y="25" width="12" height="30" rx="2" fill="#0070C0" opacity="0.7"/><rect x="45" y="15" width="12" height="40" rx="2" fill="#0070C0" opacity="0.8"/><rect x="65" y="20" width="12" height="35" rx="2" fill="#0070C0" opacity="0.7"/><rect x="85" y="10" width="12" height="45" rx="2" fill="#0070C0" opacity="0.9"/></svg>
+          </div>
+          <div class="project-card-body">
+            <h4>Strategic War Gaming: Specialty Pharma Launch</h4>
+            <p>Facilitated a two-day war gaming session for a specialty pharma brand team, stress-testing five go-to-market scenarios and identifying a previously undetected competitive risk that reshaped the launch plan.</p>
+            <div class="project-card-meta">
+              <span>Specialty Pharma · War Gaming</span>
+              <a href="#" class="text-teal" style="font-weight: 600; font-size: 0.82rem;" onclick="showPage('contact'); return false;">Learn more →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-img" aria-hidden="true">
+            <div class="project-tag">Qualitative Research</div>
+            <svg viewBox="0 0 100 60" style="width:60%; opacity:0.5;" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="30" r="12" fill="none" stroke="#7CC8F5" stroke-width="2"/><circle cx="50" cy="30" r="12" fill="none" stroke="#7CC8F5" stroke-width="2"/><circle cx="80" cy="30" r="12" fill="none" stroke="#7CC8F5" stroke-width="2"/><circle cx="20" cy="30" r="4" fill="#0070C0"/><circle cx="50" cy="30" r="4" fill="#0070C0"/><circle cx="80" cy="30" r="4" fill="#0070C0"/></svg>
+          </div>
+          <div class="project-card-body">
+            <h4>KOL Insight Program: Rare Disease Launch Readiness</h4>
+            <p>Conducted 24 in-depth interviews with rare disease KOLs across four countries, surfacing unmet need themes that directly informed the brand's medical education strategy and value messaging.</p>
+            <div class="project-card-meta">
+              <span>Rare Disease · Qualitative IDI</span>
+              <a href="#" class="text-teal" style="font-weight: 600; font-size: 0.82rem;" onclick="showPage('contact'); return false;">Learn more →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-img" aria-hidden="true">
+            <div class="project-tag">Quantitative Research</div>
+            <svg viewBox="0 0 100 60" style="width:60%; opacity:0.5;" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="45" r="8" fill="rgba(0,112,192,0.6)"/><circle cx="35" cy="30" r="12" fill="rgba(0,112,192,0.7)"/><circle cx="60" cy="20" r="16" fill="rgba(0,112,192,0.8)"/><circle cx="85" cy="35" r="10" fill="rgba(0,112,192,0.65)"/></svg>
+          </div>
+          <div class="project-card-body">
+            <h4>Physician Survey & Conjoint Analysis: CNS Market</h4>
+            <p>Fielded a 350-physician quantitative study including discrete choice conjoint analysis to model prescribing preference drivers for a CNS asset, producing a demand forecast with ±12% accuracy.</p>
+            <div class="project-card-meta">
+              <span>CNS · Quantitative · Conjoint</span>
+              <a href="#" class="text-teal" style="font-weight: 600; font-size: 0.82rem;" onclick="showPage('contact'); return false;">Learn more →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-img" aria-hidden="true">
+            <div class="project-tag">Strategic Consulting</div>
+            <svg viewBox="0 0 100 60" style="width:60%; opacity:0.5;" xmlns="http://www.w3.org/2000/svg"><polygon points="50,5 95,55 5,55" fill="none" stroke="#7CC8F5" stroke-width="2"/><polygon points="50,20 78,55 22,55" fill="rgba(0,112,192,0.3)"/></svg>
+          </div>
+          <div class="project-card-body">
+            <h4>Portfolio Strategy Advisory: Mid-Size Biotech</h4>
+            <p>Provided a 12-month strategic consulting retainer to a mid-size biotech with three assets in Phase II, delivering integrated CI, market research, and advisory board insights to inform board-level portfolio decisions.</p>
+            <div class="project-card-meta">
+              <span>Biotech · Portfolio Strategy</span>
+              <a href="#" class="text-teal" style="font-weight: 600; font-size: 0.82rem;" onclick="showPage('contact'); return false;">Learn more →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-card-img" aria-hidden="true">
+            <div class="project-tag">Dimensional Intelligence</div>
+            <svg viewBox="0 0 100 60" style="width:60%; opacity:0.5;" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="30" r="20" fill="none" stroke="#0070C0" stroke-width="2"/><circle cx="50" cy="30" r="12" fill="none" stroke="#7CC8F5" stroke-width="1.5" stroke-dasharray="3,2"/><circle cx="50" cy="30" r="5" fill="#0070C0"/></svg>
+          </div>
+          <div class="project-card-body">
+            <h4>Integrated Intelligence Program: Global Launch</h4>
+            <p>Deployed the full Dimensional Intelligence™ system for a global pharma launch across 7 markets — combining CI, qual, quant, advisory boards, and strategic planning into a unified, continuously updated knowledge base.</p>
+            <div class="project-card-meta">
+              <span>Global · Full DI System</span>
+              <a href="#" class="text-teal" style="font-weight: 600; font-size: 0.82rem;" onclick="showPage('contact'); return false;">Learn more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;">
+        <a href="#" class="btn btn-outline" onclick="showPage('contact'); return false;">Discuss Your Project</a>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-projects -->
+
+
+<!-- ============================================================
+     NEWS & EVENTS PAGE
+     ============================================================ -->
+<div class="page" id="page-news">
+  <div class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="container page-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="#" onclick="showPage('home'); return false;">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span aria-current="page">News & Events</span>
+      </nav>
+      <h1>News, Insights & Events</h1>
+      <p>The latest perspectives from LCN Consulting on pharma strategy, competitive intelligence, and market research.</p>
+    </div>
+  </div>
+
+  <section class="news section-pad">
+    <div class="container">
+      <div class="news-grid">
+        <div class="news-featured">
+          <div class="news-featured-img" role="img" aria-label="Featured article: AI in Pharma Competitive Intelligence">
+            <div class="news-featured-tag">Featured Article</div>
+            <span class="news-featured-date">March 2025</span>
+          </div>
+          <div class="news-featured-body">
+            <h3>How AI Is Reshaping Competitive Intelligence in Pharma — And What It Still Gets Wrong</h3>
+            <p>Artificial intelligence tools promise to transform how pharmaceutical companies monitor competitors. But the most important CI work still requires human judgment, contextual expertise, and a validated framework. We explore where AI helps and where it falls dangerously short.</p>
+            <a href="#" class="btn btn-outline" style="margin-top: 20px;" onclick="showPage('contact'); return false;">Read More</a>
+          </div>
+        </div>
+
+        <div class="news-list" role="list">
+          <article class="news-item" role="listitem">
+            <span class="news-item-tag">Event</span>
+            <h5>LCN Speaking: DIA 2025 Annual Meeting</h5>
+            <p>June 2025 · Presenting on integrated CI methodology in pharma strategy.</p>
+          </article>
+          <article class="news-item" role="listitem">
+            <span class="news-item-tag">Insight</span>
+            <h5>The War Gaming Playbook for Pharma Launches</h5>
+            <p>Feb 2025 · Five scenarios every brand team should simulate before a launch.</p>
+          </article>
+          <article class="news-item" role="listitem">
+            <span class="news-item-tag">Event</span>
+            <h5>Eyeforpharma Philadelphia 2025</h5>
+            <p>April 2025 · LCN Consulting attending and available for meetings.</p>
+          </article>
+          <article class="news-item" role="listitem">
+            <span class="news-item-tag">Insight</span>
+            <h5>Why Primary Research Alone Isn't Enough</h5>
+            <p>Jan 2025 · The case for unified intelligence over siloed research programs.</p>
+          </article>
+          <article class="news-item" role="listitem">
+            <span class="news-item-tag">Award</span>
+            <h5>Seton Hall Validation Recognized in Industry Report</h5>
+            <p>Dec 2024 · LCN's methodology cited in leading pharma research review.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-news -->
+
+
+<!-- ============================================================
+     CAREERS PAGE
+     ============================================================ -->
+<div class="page" id="page-careers">
+  <div class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="container page-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="#" onclick="showPage('home'); return false;">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span aria-current="page">Careers</span>
+      </nav>
+      <h1>Career Opportunities</h1>
+      <p>Join a team of strategic minds dedicated to shaping the future of pharmaceutical decision-making.</p>
+    </div>
+  </div>
+
+  <section class="careers section-pad">
+    <div class="container">
+      <div style="max-width: 800px; margin: 0 auto 56px;">
+        <span class="overline">Why LCN</span>
+        <h2 style="margin-bottom: 16px;">Work at the intersection of research, strategy, and impact</h2>
+        <p style="color: var(--charcoal-light); line-height: 1.8;">At LCN Consulting, you'll work on some of the most strategically significant decisions in the pharmaceutical industry — and you'll do it alongside colleagues who care deeply about methodological excellence and client outcomes. We're a small, high-impact firm where your work is visible and your growth is intentional.</p>
+      </div>
+
+      <div class="careers-grid">
+        <div class="job-card">
+          <div class="job-info">
+            <h4>Senior Research Analyst – Competitive Intelligence</h4>
+            <div class="job-meta">
+              <span class="job-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>West Caldwell, NJ / Hybrid</span>
+              <span class="job-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Full-Time</span>
+              <span class="job-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>Competitive Intelligence</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" onclick="showPage('contact'); return false;">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+          <div class="job-info">
+            <h4>Qualitative Research Moderator – Pharma</h4>
+            <div class="job-meta">
+              <span class="job-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Remote / Travel Required</span>
+              <span class="job-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Full-Time</span>
+              <span class="job-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>Qualitative Research</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" onclick="showPage('contact'); return false;">Apply Now</a>
+        </div>
+
+        <div class="job-card">
+          <div class="job-info">
+            <h4>Strategic Consulting Manager – Pharma &amp; Biotech</h4>
+            <div class="job-meta">
+              <span class="job-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>West Caldwell, NJ / Hybrid</span>
+              <span class="job-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Full-Time</span>
+              <span class="job-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>Strategic Consulting</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" onclick="showPage('contact'); return false;">Apply Now</a>
+        </div>
+
+        <div class="job-card" style="background: var(--gray-light); border-style: dashed;">
+          <div class="job-info">
+            <h4>Don't See Your Role? Send a General Application</h4>
+            <div class="job-meta">
+              <span class="job-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>All Disciplines Considered</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-outline" onclick="showPage('contact'); return false;">Reach Out</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-careers -->
+
+
+<!-- ============================================================
+     CONTACT PAGE
+     ============================================================ -->
+<div class="page" id="page-contact">
+  <div class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <div class="container page-hero-inner">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="#" onclick="showPage('home'); return false;">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span aria-current="page">Contact</span>
+      </nav>
+      <h1>Let's Talk Strategy</h1>
+      <p>Tell us about the decision you're facing. We'll tell you how Dimensional Intelligence™ can help.</p>
+    </div>
+  </div>
+
+  <section class="contact section-pad">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <span class="overline">Get in Touch</span>
+          <h2 style="margin-bottom: 8px;">Contact LCN Consulting</h2>
+          <p style="color: var(--charcoal-light); margin-bottom: 32px; line-height: 1.75;">We'd love to hear about the challenges you're facing and explore how we can help. Reach out via the form or contact us directly.</p>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-info-text">
+              <strong>Office Address</strong>
+              <span>175 Fairfield Ave Suite 2D<br>West Caldwell, NJ 07006</span>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+            </div>
+            <div class="contact-info-text">
+              <strong>Phone</strong>
+              <span><a href="tel:9732260344">973-226-0344</a></span>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-info-text">
+              <strong>Email</strong>
+              <span><a href="mailto:ecriscione@lcnconsult.com">ecriscione@lcnconsult.com</a></span>
+            </div>
+          </div>
+
+          <div style="background: var(--teal-pale); border: 1px solid rgba(0,112,192,0.15); border-radius: var(--radius-md); padding: 24px; margin-top: 16px;">
+            <strong style="display: block; color: var(--navy); margin-bottom: 8px;">Office Hours</strong>
+            <p style="font-size: 0.875rem; color: var(--charcoal-light); line-height: 1.6;">Monday – Friday<br>9:00 AM – 5:30 PM EST<br><br>We typically respond to inquiries within one business day.</p>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <span class="overline">Request a Consultation</span>
+          <h3 style="margin-bottom: 8px; font-size: 1.5rem;">Tell us about your project</h3>
+          <p style="font-size: 0.875rem; color: var(--charcoal-light); margin-bottom: 28px;">All inquiries are handled confidentially. We'll be in touch within one business day.</p>
+
+          <div id="contactFormWrapper">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="firstName">First Name <span>*</span></label>
+                <input class="form-input" type="text" id="firstName" name="firstName" placeholder="Jane" required autocomplete="given-name" aria-required="true">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="lastName">Last Name <span>*</span></label>
+                <input class="form-input" type="text" id="lastName" name="lastName" placeholder="Smith" required autocomplete="family-name" aria-required="true">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">Email Address <span>*</span></label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="jane@company.com" required autocomplete="email" aria-required="true">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="company">Company / Organization <span>*</span></label>
+              <input class="form-input" type="text" id="company" name="company" placeholder="Your company name" required aria-required="true">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="service">Service of Interest</label>
+              <select class="form-input" id="service" name="service" aria-label="Select service of interest">
+                <option value="">Select a service...</option>
+                <option value="commercial">Strategic Commercial Consulting</option>
+                <option value="planning">Strategic Planning</option>
+                <option value="qualitative">Qualitative Market Research</option>
+                <option value="quantitative">Quantitative Market Research</option>
+                <option value="ci">Competitive Intelligence</option>
+                <option value="dimensional">Full Dimensional Intelligence™ Program</option>
+                <option value="other">Other / Not Sure Yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Tell us about your project or challenge <span>*</span></label>
+              <textarea class="form-input" id="message" name="message" placeholder="Briefly describe the strategic decision or challenge you're facing, and we'll reach out to discuss how we can help..." required aria-required="true"></textarea>
+            </div>
+            <button class="btn btn-primary form-submit" onclick="submitForm(); return false;" type="button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+          </div>
+
+          <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <h4>Message Received!</h4>
+            <p>Thank you for reaching out. A member of our team will be in touch within one business day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div><!-- /page-contact -->
+
+</main><!-- /main -->
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo" aria-label="LCN Consulting">
+          <div class="logo-mark" aria-hidden="true">LCN</div>
+          <div class="logo-text">
+            LCN Consulting
+            <span>Strategic Pharma Insights</span>
+          </div>
+        </div>
+        <p>Delivering Dimensional Intelligence™ for pharmaceutical and biotech leaders facing high-stakes decisions since 2006. Boardroom-defensible. Academically validated. Decision-ready.</p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul class="footer-links">
+          <li><a href="#" onclick="showServiceDetail('commercial'); return false;">Strategic Commercial Consulting</a></li>
+          <li><a href="#" onclick="showServiceDetail('planning'); return false;">Strategic Planning</a></li>
+          <li><a href="#" onclick="showServiceDetail('qualitative'); return false;">Qualitative Research</a></li>
+          <li><a href="#" onclick="showServiceDetail('quantitative'); return false;">Quantitative Research</a></li>
+          <li><a href="#" onclick="showServiceDetail('ci'); return false;">Competitive Intelligence</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul class="footer-links">
+          <li><a href="#" onclick="showPage('about'); return false;">About / Our Approach</a></li>
+          <li><a href="#" onclick="showPage('projects'); return false;">Projects &amp; Case Studies</a></li>
+          <li><a href="#" onclick="showPage('news'); return false;">News &amp; Events</a></li>
+          <li><a href="#" onclick="showPage('careers'); return false;">Careers</a></li>
+          <li><a href="#" onclick="showPage('contact'); return false;">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>175 Fairfield Ave Suite 2D<br>West Caldwell, NJ 07006</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+          <a href="tel:9732260344">973-226-0344</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:ecriscione@lcnconsult.com">ecriscione@lcnconsult.com</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 LCN Consulting. All rights reserved. West Caldwell, NJ.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+/* ============================================================
+   PAGE NAVIGATION
+   ============================================================ */
+function showPage(pageId) {
+  document.querySelectorAll('.page').forEach(p => {
+    p.classList.remove('active');
+    p.setAttribute('aria-hidden', 'true');
+  });
+  const target = document.getElementById('page-' + pageId);
+  if (target) {
+    target.classList.add('active');
+    target.removeAttribute('aria-hidden');
+  }
+
+  // Reset services page
+  if (pageId === 'services') {
+    document.getElementById('services-overview-content').style.display = 'block';
+    document.getElementById('service-detail-content').style.display = 'none';
+    document.getElementById('service-page-title').textContent = 'Our Services';
+    document.getElementById('service-page-subtitle').textContent = 'Five integrated disciplines designed to deliver decision-ready intelligence at every stage of the pharma lifecycle.';
+    document.getElementById('services-breadcrumb').textContent = 'Services';
+  }
+
+  // Update active nav link
+  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  initScrollAnimations();
+}
+
+/* ============================================================
+   SERVICE DETAIL
+   ============================================================ */
+const serviceData = {
+  commercial: {
+    title: 'Strategic Commercial Consulting',
+    subtitle: 'High-stakes launch strategy, market access advisory, and portfolio optimization grounded in deep therapeutic area intelligence.',
+    bullets: [
+      'Pre-launch competitive positioning and brand strategy',
+      'Market access and payer landscape assessment',
+      'Portfolio prioritization and lifecycle management',
+      'Launch readiness evaluation and gap analysis',
+      'Advisory board design and facilitation',
+      'Strategic KPI framework development'
+    ],
+    description: 'LCN\'s Strategic Commercial Consulting practice brings together competitive intelligence, primary research, and senior strategic expertise to help you make better decisions at critical inflection points. Whether you\'re preparing for a major launch, navigating a competitive threat, or optimizing a complex portfolio, our team delivers the clarity you need — in the format your leadership demands.'
+  },
+  planning: {
+    title: 'Strategic Planning',
+    subtitle: 'Scenario planning, war gaming facilitation, and roadmap development to stress-test your strategy before it hits the market.',
+    bullets: [
+      'War gaming facilitation and scenario design',
+      'Competitive simulation and role-playing workshops',
+      'Brand roadmap development and prioritization',
+      'Stakeholder alignment sessions',
+      'Strategic assumption stress-testing',
+      'Post-war gaming implementation planning'
+    ],
+    description: 'Our Strategic Planning service goes beyond research to active strategy development. We specialize in facilitated war gaming — bringing your team together to simulate competitive responses and stress-test your assumptions in a structured, evidence-based environment. The result is a brand team that has already "lived through" the scenarios most likely to challenge their strategy — and has a plan to address each one.'
+  },
+  qualitative: {
+    title: 'Primary Qualitative Market Research',
+    subtitle: 'KOL interviews, advisory boards, dyads, and focus groups that uncover the "why" behind prescribing behavior and market dynamics.',
+    bullets: [
+      'In-depth interviews (IDIs) with physicians and KOLs',
+      'Advisory board design, recruitment and facilitation',
+      'Focus groups and dyads',
+      'Ethnographic and observational research',
+      'Patient and caregiver research',
+      'Payer and access stakeholder interviews'
+    ],
+    description: 'Qualitative research is the foundation of strategic insight — it tells you not just what the market thinks, but why. LCN\'s qualitative capabilities combine methodological rigor with deep pharma domain expertise. Our moderators and interviewers understand the clinical and commercial context of every conversation, enabling them to probe deeper, surface latent needs, and synthesize findings into clear strategic direction.'
+  },
+  quantitative: {
+    title: 'Primary Quantitative Market Research',
+    subtitle: 'Physician surveys, conjoint analysis, message testing, and demand forecasting to quantify market opportunities with precision.',
+    bullets: [
+      'Physician and HCP surveys',
+      'Discrete choice conjoint analysis',
+      'Message and concept testing',
+      'Awareness, attitude and usage (AA&U) studies',
+      'Patient journey quantification',
+      'Demand forecasting and market sizing'
+    ],
+    description: 'When you need to quantify what your qualitative research has revealed, LCN\'s quantitative capabilities deliver statistically rigorous answers to your most critical strategic questions. From early-phase concept testing to full conjoint analysis and demand forecasting, our quantitative studies are designed to produce outputs that can be presented directly to leadership — with the confidence intervals and methodology to back them up.'
+  },
+  ci: {
+    title: 'Competitive Intelligence',
+    subtitle: 'Continuous pipeline monitoring, conference intelligence, and CAR (Comprehensive Analysis and Recommendations) reports that keep you ahead of the competitive curve.',
+    bullets: [
+      'Continuous pipeline monitoring and tracking',
+      'Conference intelligence programs (ASCO, ESMO, ASH, etc.)',
+      'CAR: Comprehensive Analysis and Recommendations reports',
+      'Competitor clinical trial analysis',
+      'Regulatory and label intelligence',
+      'Seton Hall University-validated CI methodology'
+    ],
+    description: 'LCN\'s Competitive Intelligence practice is built on the only pharma CI methodology validated by a major research university — Seton Hall. Our signature CAR (Comprehensive Analysis and Recommendations) reports synthesize pipeline intelligence, conference coverage, regulatory intelligence, and primary research into a single, executive-ready deliverable. Whether you need one-time landscape analysis or continuous monitoring, we deliver CI that changes what you do — not just what you know.'
+  }
+};
+
+function showServiceDetail(serviceId) {
+  const data = serviceData[serviceId];
+  if (!data) return;
+
+  showPage('services');
+
+  document.getElementById('services-overview-content').style.display = 'none';
+  document.getElementById('service-page-title').textContent = data.title;
+  document.getElementById('service-page-subtitle').textContent = data.subtitle;
+  document.getElementById('services-breadcrumb').textContent = 'Services';
+
+  const iconMap = {
+    commercial: '<path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>',
+    planning: '<rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>',
+    qualitative: '<path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/>',
+    quantitative: '<polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>',
+    ci: '<circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>'
+  };
+
+  const bulletsHtml = data.bullets.map(b => `
+    <div class="service-bullet">
+      <div class="service-bullet-dot" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <span>${b}</span>
+    </div>
+  `).join('');
+
+  const html = `
+    <div style="max-width: 900px; margin: 0 auto;">
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; margin-bottom: 64px;">
+        <div>
+          <span class="overline">Service Overview</span>
+          <h2 style="margin-bottom: 16px;">${data.title}</h2>
+          <p style="color: var(--charcoal-light); line-height: 1.8; margin-bottom: 28px;">${data.description}</p>
+          <div class="service-bullets">${bulletsHtml}</div>
+          <a href="#" class="btn btn-primary" onclick="showPage('contact'); return false;" style="margin-top: 16px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            Request a Consultation
+          </a>
+        </div>
+        <div style="background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%); border-radius: var(--radius-lg); aspect-ratio: 4/3; display:flex; align-items:center; justify-content:center;">
+          <div style="width:80px; height:80px; background: rgba(255,255,255,0.1); border-radius: 20px; display:flex; align-items:center; justify-content:center; color: rgba(255,255,255,0.9);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:44px;height:44px;">${iconMap[serviceId] || ''}</svg>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; padding-top: 32px; border-top: 1px solid var(--gray-mid);">
+        <a href="#" class="btn btn-outline" onclick="document.getElementById('services-overview-content').style.display='block'; document.getElementById('service-detail-content').style.display='none'; document.getElementById('service-page-title').textContent='Our Services'; return false;">
+          ← Back to All Services
+        </a>
+      </div>
+    </div>
+  `;
+
+  const detailEl = document.getElementById('service-detail-content');
+  detailEl.innerHTML = html;
+  detailEl.style.display = 'block';
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* ============================================================
+   FAQ TOGGLE
+   ============================================================ */
+function toggleFAQ(btn) {
+  const item = btn.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+  // Close all
+  document.querySelectorAll('.faq-item.open').forEach(el => {
+    el.classList.remove('open');
+    el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+  });
+  // Open clicked if was closed
+  if (!isOpen) {
+    item.classList.add('open');
+    btn.setAttribute('aria-expanded', 'true');
+  }
+}
+
+/* ============================================================
+   TESTIMONIALS SLIDER
+   ============================================================ */
+let tSlide = 0;
+const totalSlides = 2; // 2 groups of 2
+
+function updateSlider() {
+  const slider = document.getElementById('testimonialsSlider');
+  if (!slider) return;
+  const cards = slider.querySelectorAll('.testimonial-card');
+  const isMobile = window.innerWidth < 768;
+  const perPage = isMobile ? 1 : 2;
+  const offset = tSlide * perPage * (isMobile ? 100 : 50);
+  slider.style.transform = `translateX(-${offset}%)`;
+  document.querySelectorAll('.t-dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === tSlide);
+    dot.setAttribute('aria-current', i === tSlide ? 'true' : 'false');
+  });
+}
+
+document.getElementById('tPrev')?.addEventListener('click', () => {
+  tSlide = (tSlide - 1 + totalSlides) % totalSlides;
+  updateSlider();
+});
+
+document.getElementById('tNext')?.addEventListener('click', () => {
+  tSlide = (tSlide + 1) % totalSlides;
+  updateSlider();
+});
+
+document.querySelectorAll('.t-dot').forEach(dot => {
+  dot.addEventListener('click', () => {
+    tSlide = parseInt(dot.dataset.idx);
+    updateSlider();
+  });
+});
+
+// Auto advance
+setInterval(() => {
+  tSlide = (tSlide + 1) % totalSlides;
+  updateSlider();
+}, 6000);
+
+/* ============================================================
+   STICKY HEADER
+   ============================================================ */
+const header = document.getElementById('siteHeader');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 60) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+}, { passive: true });
+
+/* ============================================================
+   MOBILE NAV
+   ============================================================ */
+const navToggle = document.getElementById('navToggle');
+const mobileNav = document.getElementById('mobileNav');
+
+navToggle?.addEventListener('click', () => {
+  const isOpen = mobileNav.classList.contains('open');
+  mobileNav.classList.toggle('open');
+  mobileNav.style.display = isOpen ? 'none' : 'block';
+  navToggle.setAttribute('aria-expanded', String(!isOpen));
+  document.body.style.overflow = isOpen ? '' : 'hidden';
+});
+
+mobileNav.style.display = 'none';
+mobileNav.addEventListener('click', (e) => {
+  if (e.target === mobileNav) closeMobileNav();
+});
+
+function closeMobileNav() {
+  mobileNav.classList.remove('open');
+  mobileNav.style.display = 'none';
+  navToggle.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = '';
+}
+
+/* ============================================================
+   SCROLL ANIMATIONS
+   ============================================================ */
+function initScrollAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.page.active .fade-in').forEach(el => {
+    observer.observe(el);
+  });
+}
+
+/* ============================================================
+   CONTACT FORM
+   ============================================================ */
+function submitForm() {
+  const firstName = document.getElementById('firstName')?.value.trim();
+  const email = document.getElementById('email')?.value.trim();
+  const company = document.getElementById('company')?.value.trim();
+  const message = document.getElementById('message')?.value.trim();
+
+  if (!firstName || !email || !company || !message) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+
+  document.getElementById('contactFormWrapper').style.display = 'none';
+  document.getElementById('formSuccess').style.display = 'block';
+}
+
+/* ============================================================
+   INIT
+   ============================================================ */
+document.addEventListener('DOMContentLoaded', () => {
+  initScrollAnimations();
+
+  // Keyboard navigation support
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMobileNav();
+  });
+});
+
+window.addEventListener('resize', updateSlider);
+</script>
+</body>
+</html>
